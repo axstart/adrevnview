@@ -22,10 +22,6 @@ export const ORG = {
     "https://github.com/muneebahmed15/adrevnview",
     "https://www.linkedin.com/company/adrevnview",
     "https://twitter.com/adrevnview",
-    "https://tagizo.com",
-    "https://axstart.com",
-    "https://cizher.com",
-    "https://matzop.com",
   ],
   knowsAbout: [
     "Custom web design",

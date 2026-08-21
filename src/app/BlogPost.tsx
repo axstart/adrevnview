@@ -41,9 +41,19 @@ export default function BlogPost() {
           {post.excerpt}
         </p>
         <div className="space-y-5 text-foreground/85 leading-relaxed">
-          {post.body.map((paragraph) => (
-            <p key={paragraph.slice(0, 24)}>{paragraph}</p>
-          ))}
+          {post.body.map((block) =>
+            block.startsWith("## ") ? (
+              <h2
+                key={block}
+                className="text-2xl font-bold text-foreground pt-4"
+                style={{ fontFamily: "Manrope, sans-serif" }}
+              >
+                {block.slice(3)}
+              </h2>
+            ) : (
+              <p key={block.slice(0, 24)}>{block}</p>
+            ),
+          )}
         </div>
         <div className="mt-12 rounded-2xl border border-border bg-card p-8">
           <h2 className="text-xl font-bold mb-2" style={{ fontFamily: "Manrope, sans-serif" }}>

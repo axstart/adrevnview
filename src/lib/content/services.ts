@@ -34,6 +34,8 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     faq: [
       { question: "How long does a custom web design project take?", answer: "Most custom website design projects run 4–8 weeks depending on scope, page count, and feedback cycles." },
       { question: "Do you design for B2B and enterprise brands?", answer: "Yes. We specialize in B2B SaaS, professional services, and enterprise sites that need trust, clarity, and lead generation." },
+      { question: "Is custom web design available for Long Island businesses?", answer: "Yes. Adrevnview is based on Long Island, New York, and designs custom websites for local, national, and international brands." },
+      { question: "Do you also handle development and SEO after design?", answer: "Yes. Design can ship as a handoff or continue into React, WordPress, Shopify, or Webflow development with SEO and GEO built in." },
     ],
   },
   {
@@ -46,7 +48,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "Campaign traffic deserves a destination built to convert. We design landing pages with singular focus: one offer, one audience, one action. Every section is structured to reduce friction, reinforce value, and support your paid and organic acquisition channels.",
     benefits: ["Campaign-specific messaging hierarchy", "A/B-test-ready modular sections", "Fast load performance", "CRM and analytics integration hooks", "Consistent brand execution"],
     process: ["Offer and audience definition", "Wireframe and copy outline", "Visual design and mobile polish", "Launch support and iteration"],
-    faq: [{ question: "Can you design landing pages for paid ads?", answer: "Yes. We align page structure with Google Ads, Meta, and LinkedIn campaign goals for higher quality scores and conversion rates." }],
+    faq: [
+      { question: "Can you design landing pages for paid ads?", answer: "Yes. We align page structure with Google Ads, Meta, and LinkedIn campaign goals for higher quality scores and conversion rates." },
+      { question: "Do landing pages include mobile-first layouts?", answer: "Yes. Every Adrevnview landing page is designed mobile-first and tested across major devices." },
+      { question: "Can a landing page connect to our CRM?", answer: "Yes. We hook forms to HubSpot, Salesforce, and similar tools so leads flow into your stack." },
+      { question: "Is a landing page faster than a full website project?", answer: "Yes. Landing pages are scoped around one offer and one action, so they are typically a tighter brief than a full site." },
+    ],
   },
   {
     title: "UI/UX Design",
@@ -58,7 +65,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "Great UX removes guesswork for your users and your sales team. Adrevnview maps user journeys, designs intuitive interfaces, and validates flows before development begins — saving rework and accelerating time to launch.",
     benefits: ["User journey mapping", "Interactive prototypes", "Design system components", "Usability-focused navigation", "Cross-device experience consistency"],
     process: ["User research and persona alignment", "Flow diagrams and wireframes", "UI design and component library", "Prototype review and refinement"],
-    faq: [{ question: "Do you design SaaS product interfaces?", answer: "Yes. We design marketing sites and product UI for SaaS platforms, dashboards, and customer portals." }],
+    faq: [
+      { question: "Do you design SaaS product interfaces?", answer: "Yes. We design marketing sites and product UI for SaaS platforms, dashboards, and customer portals." },
+      { question: "Do you provide interactive prototypes before development?", answer: "Yes. We map user journeys, wireframe flows, and share prototypes for review before engineering begins." },
+      { question: "Can UI/UX work include a design system?", answer: "Yes. We deliver component libraries so product and marketing surfaces stay consistent as you add pages." },
+      { question: "Do you work with in-house product teams?", answer: "Yes. We collaborate with founders, product managers, and engineers on handoff specs and iteration." },
+    ],
   },
   {
     title: "Website Redesign",
@@ -70,7 +82,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "An outdated website costs you trust and search visibility. We audit your current site, preserve what works, migrate content safely, and deliver a modern experience that improves engagement without tanking organic traffic.",
     benefits: ["SEO-safe migration planning", "Content and URL mapping", "Performance improvements", "Updated brand expression", "Improved conversion paths"],
     process: ["Site audit and goal setting", "Content inventory and redirect plan", "Redesign and development", "QA, launch, and post-launch monitoring"],
-    faq: [{ question: "Will a redesign hurt my Google rankings?", answer: "Not when done correctly. We implement redirects, maintain URL structures where possible, and preserve on-page SEO fundamentals." }],
+    faq: [
+      { question: "Will a redesign hurt my Google rankings?", answer: "Not when done correctly. We implement redirects, maintain URL structures where possible, and preserve on-page SEO fundamentals." },
+      { question: "Do you migrate existing content?", answer: "Yes. We inventory pages, map URLs, and migrate content so you do not start from a blank site." },
+      { question: "Can you redesign on our current CMS?", answer: "Yes. We redesign on React, WordPress, Shopify, Webflow, or a stack that fits your team." },
+      { question: "Do Long Island businesses use this for local SEO?", answer: "Yes. Redesigns often include clearer service pages, local NAP details, and schema so Long Island searchers can find you." },
+    ],
   },
   {
     title: "Responsive Design",
@@ -82,7 +99,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "More than half of web traffic is mobile. We design responsive experiences that adapt gracefully across screen sizes, maintain readability, and keep core CTAs within thumb reach on every device.",
     benefits: ["Mobile-first layout strategy", "Touch-optimized interactions", "Consistent branding across breakpoints", "Core Web Vitals awareness", "Cross-browser testing"],
     process: ["Breakpoint planning", "Mobile layout design", "Tablet and desktop expansion", "Device QA before launch"],
-    faq: [{ question: "Is responsive design included in all projects?", answer: "Yes. Every Adrevnview website is built mobile-first and tested across major devices and browsers." }],
+    faq: [
+      { question: "Is responsive design included in all projects?", answer: "Yes. Every Adrevnview website is built mobile-first and tested across major devices and browsers." },
+      { question: "Do you test on real phones and tablets?", answer: "Yes. We plan breakpoints, then QA layouts and tap targets on major devices before launch." },
+      { question: "Does responsive work include Core Web Vitals?", answer: "We design with performance in mind — image dimensions, readable type, and layouts that stay stable as screens change." },
+      { question: "Can you fix an existing site that breaks on mobile?", answer: "Yes. We audit the current breakpoints and rebuild layouts so CTAs stay usable on small screens." },
+    ],
   },
   {
     title: "React Development",
@@ -94,7 +116,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "React powers fast, interactive experiences when implemented with discipline. We build React frontends with component-driven architecture, optimized bundles, and prerendering strategies so search engines and AI crawlers can read your content.",
     benefits: ["Component-based architecture", "Performance optimization", "Prerender and SEO support", "API and CMS integrations", "Maintainable TypeScript codebase"],
     process: ["Technical planning", "Component development", "Integration and testing", "Deployment and monitoring"],
-    faq: [{ question: "Do you use Next.js or Vite?", answer: "We choose the best stack per project — Vite + React for marketing sites, Next.js when SSR/SSG requirements demand it." }],
+    faq: [
+      { question: "Do you use Next.js or Vite?", answer: "We choose the best stack per project — Vite + React for marketing sites, Next.js when SSR/SSG requirements demand it." },
+      { question: "Do you build React sites that search engines can read?", answer: "Yes. We use prerendering and clean HTML so Google and AI crawlers can index headings, FAQs, and service copy — not an empty JavaScript shell." },
+      { question: "Is TypeScript part of your React work?", answer: "Yes. We typically ship maintainable TypeScript React codebases with component-driven architecture." },
+      { question: "Can React apps connect to our APIs and CMS?", answer: "Yes. We integrate REST and GraphQL APIs, CRMs, and headless CMS tools as part of the build." },
+    ],
   },
   {
     title: "WordPress Development",
@@ -106,7 +133,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "WordPress remains a powerful CMS when customized correctly. We build secure, fast WordPress sites with intuitive editing experiences and clean theme code that won't break with updates.",
     benefits: ["Custom theme development", "Editor-friendly blocks", "Security hardening", "Caching and performance", "SEO plugin configuration"],
     process: ["Requirements and plugin audit", "Theme design and build", "Content migration", "Training and launch"],
-    faq: [{ question: "Can you migrate my site to WordPress?", answer: "Yes. We handle content migration, redirect mapping, and design refresh during WordPress migrations." }],
+    faq: [
+      { question: "Can you migrate my site to WordPress?", answer: "Yes. We handle content migration, redirect mapping, and design refresh during WordPress migrations." },
+      { question: "Do you build custom themes or only use templates?", answer: "We build custom themes with editor-friendly blocks, plus performance and security hardening." },
+      { question: "Will our team be able to edit pages after launch?", answer: "Yes. We structure the editor experience so marketing can update content without breaking the design." },
+      { question: "Do you configure SEO plugins?", answer: "Yes. We set up SEO plugin fundamentals — titles, sitemaps, and on-page fields — as part of launch." },
+    ],
   },
   {
     title: "Shopify Development",
@@ -118,7 +150,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "Your Shopify store should sell as hard as your best salesperson. We design and develop Shopify experiences optimized for product discovery, trust signals, and frictionless checkout.",
     benefits: ["Custom Shopify themes", "Product page optimization", "App integration", "Mobile commerce UX", "Conversion rate improvements"],
     process: ["Store audit and strategy", "Theme design and development", "Product setup and QA", "Launch and optimization"],
-    faq: [{ question: "Do you work with Shopify Plus?", answer: "Yes. We support Shopify and Shopify Plus stores for growing eCommerce brands." }],
+    faq: [
+      { question: "Do you work with Shopify Plus?", answer: "Yes. We support Shopify and Shopify Plus stores for growing eCommerce brands." },
+      { question: "Do you design custom Shopify themes?", answer: "Yes. We design and develop custom themes focused on product discovery, trust, and checkout." },
+      { question: "Can you improve conversion on an existing Shopify store?", answer: "Yes. We audit product pages, mobile UX, and apps, then rebuild the parts that slow shoppers down." },
+      { question: "Do Shopify projects include SEO?", answer: "Yes. Collection metadata, internal links, and performance work are part of how we ship storefronts." },
+    ],
   },
   {
     title: "Webflow Development",
@@ -130,7 +167,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "Webflow empowers marketing teams to publish quickly without sacrificing design quality. We build Webflow sites with structured CMS collections, reusable components, and SEO best practices baked in.",
     benefits: ["Visual development in Webflow", "CMS architecture", "Interactions and animations", "Client editor training", "Hosting and launch support"],
     process: ["Design system setup", "Page and CMS build", "Interactions and QA", "Editor handoff"],
-    faq: [{ question: "Can our team edit the site after launch?", answer: "Yes. We structure Webflow CMS and style guides so your team can update content safely." }],
+    faq: [
+      { question: "Can our team edit the site after launch?", answer: "Yes. We structure Webflow CMS and style guides so your team can update content safely." },
+      { question: "Do you build Webflow CMS collections?", answer: "Yes. We set up collections and reusable components so blogs, case studies, and landing pages stay consistent." },
+      { question: "Is Webflow SEO-ready when you launch?", answer: "Yes. We implement canonical titles, structured pages, and clean publishing workflows for marketing teams." },
+      { question: "Do you train clients on the Webflow editor?", answer: "Yes. Editor training and a style guide are part of handoff." },
+    ],
   },
   {
     title: "API Integrations",
@@ -142,7 +184,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "Disconnected tools create manual work and lost leads. We integrate your website with HubSpot, Salesforce, Stripe, Zapier, and custom APIs so data flows automatically between systems.",
     benefits: ["CRM and form integrations", "Payment gateway setup", "Webhook and automation flows", "Secure authentication", "Error monitoring"],
     process: ["Integration mapping", "API development", "Testing and validation", "Documentation and handoff"],
-    faq: [{ question: "Which platforms do you integrate with?", answer: "HubSpot, Salesforce, Stripe, Mailchimp, Google Analytics, and most REST/GraphQL APIs." }],
+    faq: [
+      { question: "Which platforms do you integrate with?", answer: "HubSpot, Salesforce, Stripe, Mailchimp, Google Analytics, and most REST/GraphQL APIs." },
+      { question: "Do you build custom API connections?", answer: "Yes. We map data flows, write integrations, and add error monitoring so leads and payments do not get stuck." },
+      { question: "Can you connect forms to our CRM?", answer: "Yes. Website forms can post into HubSpot, Salesforce, and similar CRMs instead of sitting in email." },
+      { question: "Do integrations include payment gateways?", answer: "Yes. Stripe and other payment gateways are a common part of our integration work." },
+    ],
   },
   {
     title: "SEO Services",
@@ -154,7 +201,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "SEO is a long-term growth channel when executed with technical rigor and quality content. We fix crawl issues, optimize page structure, build topical authority, and align your site with how Google and AI assistants discover brands.",
     benefits: ["Technical SEO audits", "On-page optimization", "Schema markup implementation", "Content strategy", "GEO and AI visibility"],
     process: ["SEO audit and baseline", "Priority roadmap", "Implementation sprints", "Monthly reporting"],
-    faq: [{ question: "Do you offer GEO optimization?", answer: "Yes. We structure content, schema, and llms.txt files so AI assistants can cite your brand accurately." }],
+    faq: [
+      { question: "Do you offer GEO optimization?", answer: "Yes. We structure content, schema, and llms.txt files so AI assistants can cite your brand accurately." },
+      { question: "What does an SEO engagement include?", answer: "Technical audits, on-page optimization, schema markup, content strategy, and reporting — prioritized from a baseline audit." },
+      { question: "Do you do local SEO for Long Island?", answer: "Yes. We work on Google Business Profile signals, location copy, and service pages for Long Island and NYC-metro businesses." },
+      { question: "Is SEO only for websites you built?", answer: "No. We audit and improve existing sites as well as sites we design and develop." },
+    ],
   },
   {
     title: "PPC Advertising",
@@ -166,7 +218,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "Paid media works best with aligned messaging and landing experiences. We manage PPC campaigns and build dedicated landing pages that improve quality scores and lower cost per acquisition.",
     benefits: ["Google Ads management", "Landing page alignment", "Conversion tracking setup", "A/B testing", "Monthly performance reviews"],
     process: ["Account audit", "Campaign structure", "Creative and landing pages", "Optimization cycles"],
-    faq: [{ question: "Do you build landing pages for ads?", answer: "Yes. Landing page design and development are core to our PPC offering." }],
+    faq: [
+      { question: "Do you build landing pages for ads?", answer: "Yes. Landing page design and development are core to our PPC offering." },
+      { question: "Which paid channels do you manage?", answer: "Google Ads plus paid social campaigns, with tracking and landing pages aligned to the offer." },
+      { question: "Do you set up conversion tracking?", answer: "Yes. Campaigns include conversion tracking so optimization is based on leads and sales, not just clicks." },
+      { question: "Can PPC run alongside SEO work?", answer: "Yes. Paid and organic often share landing pages, messaging, and reporting." },
+    ],
   },
   {
     title: "Social Media Marketing",
@@ -178,7 +235,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "Social channels extend your brand voice and nurture prospects between website visits. We develop content strategies, creative templates, and posting calendars aligned with your business goals.",
     benefits: ["Platform strategy", "Content calendars", "Creative asset design", "Community guidelines", "Analytics reporting"],
     process: ["Brand voice alignment", "Content planning", "Asset production", "Publishing and review"],
-    faq: [{ question: "Which platforms do you support?", answer: "LinkedIn, Instagram, Facebook, X, and YouTube — focused on where your audience is active." }],
+    faq: [
+      { question: "Which platforms do you support?", answer: "LinkedIn, Instagram, Facebook, X, and YouTube — focused on where your audience is active." },
+      { question: "Do you create the creative assets?", answer: "Yes. We develop content calendars and creative templates aligned with your brand." },
+      { question: "Is this only for B2C brands?", answer: "No. We support B2B and B2C brands, with LinkedIn often leading for B2B." },
+      { question: "Do you report on social performance?", answer: "Yes. We share analytics so posting stays tied to traffic and business goals." },
+    ],
   },
   {
     title: "Email Marketing",
@@ -190,7 +252,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "Email remains one of the highest-ROI marketing channels. We design templates, write nurture sequences, and set up automation that turns subscribers into customers.",
     benefits: ["Template design", "Automation workflows", "List segmentation", "A/B testing", "Deliverability best practices"],
     process: ["Strategy and segmentation", "Template design", "Automation build", "Launch and optimize"],
-    faq: [{ question: "Which email platforms do you use?", answer: "Mailchimp, Klaviyo, HubSpot, and ActiveCampaign depending on your stack." }],
+    faq: [
+      { question: "Which email platforms do you use?", answer: "Mailchimp, Klaviyo, HubSpot, and ActiveCampaign depending on your stack." },
+      { question: "Do you design email templates?", answer: "Yes. Templates, nurture sequences, and automation setup are part of the service." },
+      { question: "Can email support an eCommerce store?", answer: "Yes. We use the platform that fits your stack — Klaviyo is common for Shopify catalogs." },
+      { question: "Do you help with list segmentation?", answer: "Yes. Segmentation and lifecycle flows are how we keep campaigns from being one generic blast." },
+    ],
   },
   {
     title: "Content Strategy",
@@ -202,7 +269,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "Random blog posts don't build authority. We create content strategies mapped to search intent, buyer journeys, and AI citation opportunities — so every article supports pipeline and discoverability.",
     benefits: ["Topic cluster planning", "Editorial calendars", "SEO briefs", "GEO-optimized formats", "Performance tracking"],
     process: ["Audience and keyword research", "Content roadmap", "Production support", "Quarterly reviews"],
-    faq: [{ question: "Do you write the content?", answer: "We provide strategy and briefs; copywriting can be included or paired with your internal team." }],
+    faq: [
+      { question: "Do you write the content?", answer: "We provide strategy and briefs; copywriting can be included or paired with your internal team." },
+      { question: "How do you pick topics?", answer: "We map search intent, buyer journeys, and AI citation opportunities into topic clusters — not random posts." },
+      { question: "Does content strategy include GEO?", answer: "Yes. Briefs and formats are built so answers are extractable for search and assistants." },
+      { question: "Do you provide an editorial calendar?", answer: "Yes. Calendars and quarterly reviews keep publishing on a roadmap." },
+    ],
   },
   {
     title: "Logo Design",
@@ -214,7 +286,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "Your logo is the anchor of brand recognition. We explore concepts rooted in your positioning, refine with stakeholder feedback, and deliver production-ready files for every channel.",
     benefits: ["Multiple concept directions", "Scalable vector files", "Color and monochrome variants", "Social and favicon exports", "Usage guidelines"],
     process: ["Brand discovery", "Concept presentation", "Refinement rounds", "Final delivery"],
-    faq: [{ question: "How many concepts do you provide?", answer: "Typically 3 initial directions with 2 refinement rounds included." }],
+    faq: [
+      { question: "How many concepts do you provide?", answer: "Typically 3 initial directions with 2 refinement rounds included." },
+      { question: "Do you deliver files for print and digital?", answer: "Yes. We deliver scalable vectors plus social, favicon, and print-ready lockups." },
+      { question: "Can a new logo match our existing brand colors?", answer: "Yes. Discovery covers positioning and any colors or marks you need to keep." },
+      { question: "Is logo design available without a full website?", answer: "Yes. Logo work can stand alone or lead into identity and web design." },
+    ],
   },
   {
     title: "Brand Identity",
@@ -226,7 +303,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "A strong brand identity creates instant recognition and trust. We develop cohesive visual systems that work across your website, social channels, presentations, and product interfaces.",
     benefits: ["Logo and mark system", "Typography selection", "Color palette definition", "Imagery direction", "Brand application examples"],
     process: ["Discovery and positioning", "Visual exploration", "System development", "Guidelines delivery"],
-    faq: [{ question: "Is brand identity separate from web design?", answer: "They can be standalone or combined. Many clients start with identity before a website redesign." }],
+    faq: [
+      { question: "Is brand identity separate from web design?", answer: "They can be standalone or combined. Many clients start with identity before a website redesign." },
+      { question: "What is included in a brand identity?", answer: "Logo and mark system, typography, color palette, imagery direction, and application examples." },
+      { question: "Do you create identity for print as well as web?", answer: "Yes. Identity systems are built to work on websites, stationery, menus, and signage." },
+      { question: "Will we get usage examples?", answer: "Yes. We show the system on realistic applications so teams know how to use it." },
+    ],
   },
   {
     title: "Brand Strategy",
@@ -238,7 +320,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "Design without strategy is decoration. We facilitate workshops to define your positioning, articulate your value proposition, and align messaging across marketing and sales touchpoints.",
     benefits: ["Positioning statements", "Audience personas", "Messaging hierarchy", "Competitive analysis", "Brand narrative"],
     process: ["Stakeholder interviews", "Workshop facilitation", "Strategy documentation", "Messaging application"],
-    faq: [{ question: "Who should attend a brand strategy workshop?", answer: "Founders, marketing leads, and sales stakeholders who shape how the brand is presented." }],
+    faq: [
+      { question: "Who should attend a brand strategy workshop?", answer: "Founders, marketing leads, and sales stakeholders who shape how the brand is presented." },
+      { question: "What do we leave with?", answer: "Positioning statements, audience personas, messaging hierarchy, competitive notes, and a brand narrative." },
+      { question: "Does strategy happen before design?", answer: "Yes. We define positioning and messaging so design decisions are not decoration." },
+      { question: "Can strategy be a standalone engagement?", answer: "Yes. Workshops can stand alone or feed identity, web, and print work." },
+    ],
   },
   {
     title: "Visual Design Systems",
@@ -250,7 +337,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "As teams grow, inconsistency creeps in. We build design systems with reusable components, documented patterns, and Figma libraries so every page and product surface feels cohesive.",
     benefits: ["Figma component libraries", "Design token documentation", "Pattern documentation", "Developer handoff specs", "Governance recommendations"],
     process: ["Audit existing assets", "Token and component definition", "Documentation", "Team rollout"],
-    faq: [{ question: "Do you document for developers?", answer: "Yes. We provide specs and component maps for engineering implementation." }],
+    faq: [
+      { question: "Do you document for developers?", answer: "Yes. We provide specs and component maps for engineering implementation." },
+      { question: "Do you build Figma component libraries?", answer: "Yes. Libraries, tokens, and pattern docs keep large teams visually consistent." },
+      { question: "Is a design system only for product UI?", answer: "No. We use systems for marketing sites and product surfaces so both stay on-brand." },
+      { question: "Do you help with rollout to the team?", answer: "Yes. Documentation and governance recommendations are part of delivery." },
+    ],
   },
   {
     title: "Brand Guidelines",
@@ -262,7 +354,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "Brand guidelines protect your investment in identity. We produce clear, accessible documentation so employees, agencies, and partners represent your brand correctly every time.",
     benefits: ["Logo usage rules", "Color and typography specs", "Voice and tone guidance", "Do's and don'ts examples", "Digital and print standards"],
     process: ["Asset collection", "Guideline writing", "Visual examples", "Distribution format"],
-    faq: [{ question: "What format are guidelines delivered in?", answer: "PDF and Figma-linked digital formats, optimized for sharing with vendors and partners." }],
+    faq: [
+      { question: "What format are guidelines delivered in?", answer: "PDF and Figma-linked digital formats, optimized for sharing with vendors and partners." },
+      { question: "Do guidelines cover print and digital?", answer: "Yes. Logo usage, color, typography, voice, and print standards are documented together." },
+      { question: "Who are guidelines for?", answer: "Employees, agencies, and vendors who need to represent the brand correctly." },
+      { question: "Can guidelines include do’s and don’ts?", answer: "Yes. Visual examples of correct and incorrect use are part of the brand book." },
+    ],
   },
   {
     title: "Printing Services",
@@ -277,6 +374,8 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     faq: [
       { question: "What print products do you offer?", answer: "Business cards, letterheads and envelopes, restaurant menus, brochures and flyers, posters, and panaflex / flex banner outdoor advertising. Ask if you need vehicle wraps or indoor stands." },
       { question: "Do you only print, or do you design as well?", answer: "Both. We can design from your brand guidelines or print from approved artwork after a production check." },
+      { question: "Do you print restaurant menus and banners for Long Island businesses?", answer: "Yes. Adrevnview produces menus, cards, stationery, and panaflex signage for Long Island restaurants, shops, and campaigns — with files that match your website and brand." },
+      { question: "How does a print project start?", answer: "Share formats, quantities, and locations. We design or check artwork, send a proof, then print, finish, and deliver after approval. Quotes depend on specs — request one on the contact page." },
     ],
   },
   {
@@ -292,6 +391,8 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     faq: [
       { question: "Can you design the card and print it?", answer: "Yes. We handle design, print-ready files, and production — or we print from your existing artwork after a quality check." },
       { question: "Do you offer NFC review cards?", answer: "Yes. Pair printed business cards with our Google NFC Review Card so customers can tap to leave a review." },
+      { question: "Can you print bulk cards for a sales team?", answer: "Yes. We produce bulk runs and keep reprint-friendly files so additional boxes match the first order." },
+      { question: "Do you print business cards for Long Island companies?", answer: "Yes. Cards are designed to match your digital identity and produced for Long Island and New York teams as well as brands elsewhere." },
     ],
   },
   {
@@ -304,7 +405,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "Contracts, invoices, and client letters should look as considered as your website. We design and print letterheads, envelopes, and complementary stationery with accurate color matching so your paperwork feels like part of one brand system.",
     benefits: ["Letterhead and continuation sheets", "Envelope and compliment-slip matching", "Pantone and CMYK color accuracy", "Digital and offset print options", "Templates for Word and Google Docs"],
     process: ["Stationery audit and brand alignment", "Layout proofs for paper sizes", "Print and finishing", "Editable templates for your team"],
-    faq: [{ question: "Can you supply Word templates with the printed letterhead?", answer: "Yes. We deliver matching digital templates so staff can type letters that align with the printed stock." }],
+    faq: [
+      { question: "Can you supply Word templates with the printed letterhead?", answer: "Yes. We deliver matching digital templates so staff can type letters that align with the printed stock." },
+      { question: "Do you print envelopes and compliment slips too?", answer: "Yes. Letterheads, envelopes, and compliment slips are designed as one stationery set." },
+      { question: "Can you match our existing brand colors?", answer: "Yes. We aim for Pantone and CMYK accuracy so paperwork matches your logo and website." },
+      { question: "Is letterhead printing available on Long Island?", answer: "Yes. We design and print stationery for Long Island offices and for brands that need matching letterhead wherever they send mail." },
+    ],
   },
   {
     title: "Restaurant Menu Printing",
@@ -316,7 +422,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "A menu is a sales tool, not just a list. We design restaurant menus that highlight signatures, pair photos with prices cleanly, and print on stocks that survive spills, lamination, and seasonal updates — from dine-in books to takeout flyers and table tents.",
     benefits: ["Dine-in, takeout, and digital-ready layouts", "Lamination, coating, and tear-resistant stocks", "Seasonal insert and reprint planning", "Allergen and QR-order friendly layouts", "Matching table tents and window cards"],
     process: ["Menu audit and item hierarchy", "Design proofs for each format", "Print, laminate, and bind", "File package for future reprints"],
-    faq: [{ question: "Can you update menus when prices change?", answer: "Yes. We keep print-ready files so seasonal or price updates are fast reprints rather than full redesigns." }],
+    faq: [
+      { question: "Can you update menus when prices change?", answer: "Yes. We keep print-ready files so seasonal or price updates are fast reprints rather than full redesigns." },
+      { question: "Do you print takeout menus and table tents?", answer: "Yes. Dine-in books, takeout flyers, table tents, and window cards can share one menu system." },
+      { question: "Can restaurant menus be laminated?", answer: "Yes. We print on stocks that survive spills, with lamination and coatings when the floor needs it." },
+      { question: "Do you design menus for Long Island restaurants?", answer: "Yes. We design and print menus for Long Island and New York restaurants so the printed menu sells as clearly as the website." },
+    ],
   },
   {
     title: "Brochure and Flyer Printing",
@@ -328,7 +439,12 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     intro: "Print still converts at events, storefronts, and sales meetings. We design and print brochures, flyers, catalogs, and posters with the same visual system as your digital brand — so a tri-fold on a counter feels like an extension of your website, not a leftover.",
     benefits: ["Tri-fold, bi-fold, and booklet formats", "Flyer and poster runs for promotions", "Campaign-matched copy and photography layout", "Spot UV, matte, and gloss finishes", "Bulk quantities with reprint files"],
     process: ["Offer and format selection", "Copy layout and visual design", "Proof and paper selection", "Print production and delivery"],
-    faq: [{ question: "Do you print posters and catalogs as well?", answer: "Yes. Brochures and flyers are the core offering; posters, catalogs, and leave-behinds use the same design and production workflow." }],
+    faq: [
+      { question: "Do you print posters and catalogs as well?", answer: "Yes. Brochures and flyers are the core offering; posters, catalogs, and leave-behinds use the same design and production workflow." },
+      { question: "What brochure formats do you offer?", answer: "Tri-fold, bi-fold, and booklet formats, plus flyer and poster runs for promotions." },
+      { question: "Can flyers match our website branding?", answer: "Yes. Campaign collateral uses the same visual system as your digital brand so a tri-fold feels like the site, not a leftover." },
+      { question: "Do you deliver brochures on Long Island?", answer: "Yes. We design, print, and deliver campaign print for Long Island and NYC-metro businesses, with reprint files for the next run." },
+    ],
   },
   {
     title: "Panaflex and Banner Advertising",
@@ -343,6 +459,8 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     faq: [
       { question: "What is panaflex or penaflex printing?", answer: "Panaflex (often spelled penaflex) is large-format flex vinyl used for shop signs, street banners, and outdoor ads. We design the artwork and print it at the size your location needs." },
       { question: "Can you print vehicle wraps and indoor signage too?", answer: "Yes. Ask about vehicle wraps, roll-up stands, and indoor boards — they follow the same large-format workflow as outdoor flex." },
+      { question: "Do you measure the storefront before printing?", answer: "Yes. Site measure and viewing distance come first so type and logos read from the street." },
+      { question: "Do you produce panaflex for Long Island shop fronts?", answer: "Yes. We design and print shop-front panaflex, hoardings, and banners for Long Island locations and campaign sites." },
     ],
   },
 ];

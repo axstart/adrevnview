@@ -29,8 +29,8 @@ export default function ServicePage() {
 
       <div className="max-w-5xl mx-auto">
         <p className="text-sky-400 text-xs font-semibold tracking-widest uppercase mb-3">{service.category.replace("-", " ")}</p>
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-6" style={{ fontFamily: "Manrope, sans-serif" }}>{service.headline}</h1>
-        <p data-geo-chunk="summary" className="text-muted-foreground text-lg leading-relaxed mb-10 max-w-3xl">{service.intro}</p>
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-6" style={{ fontFamily: "Manrope, sans-serif" }} data-speakable="true">{service.headline}</h1>
+        <p data-geo-chunk="summary" data-speakable="true" className="text-muted-foreground text-lg leading-relaxed mb-10 max-w-3xl">{service.intro}</p>
 
         {service.category === "printing" ? (
           <PrintSamplesGallery slug={slug} showFilters={slug === "printing-services"} />

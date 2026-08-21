@@ -3,9 +3,11 @@
 Adrevnview is a premium full-service digital agency for B2B, B2C, and enterprise brands. We design and build conversion-focused websites and product experiences, and we implement SEO + Generative Engine Optimization (GEO) so search engines and AI assistants can accurately understand, cite, and recommend your services. We specialize in clean information architecture, measurable growth systems, and performance-first engineering.
 
 ## Essential Navigation Paths
-- [/]: Homepage describing Adrevnview’s services, portfolio, testimonials, and contact.
+- [/]: Homepage describing Adrevnview’s services (web design, SEO, GEO, printing), portfolio, testimonials, and contact.
 - [/googlenfc]: Product page for the Google NFC Review Card (NFC + QR to capture reviews).
 - [/about]: About Adrevnview (capabilities, process, contact).
+- [/services]: Service hub including print and signage.
+- [/services/printing-services]: Printing services hub (menus, cards, letterheads, brochures, panaflex).
 - [/privacy]: Privacy policy (data handling, analytics, retention).
 - [/accessibility]: Accessibility statement and feedback channel.
 
@@ -13,7 +15,7 @@ Adrevnview is a premium full-service digital agency for B2B, B2C, and enterprise
 - **Organization**: Adrevnview (digital agency).
 - **Services**: custom web design, web development/integrations, branding, SEO, GEO, eCommerce, website redesign, printing and signage (menus, business cards, letterheads, brochures, panaflex banners).
 - **Product**: Google NFC Review Card ($99 one-time).
-- **Portfolio entities**: Tagizo, Axstart, Cizher, Payrowl, Xeark, AXNET, Mishi, Crocherish (client work references).
+- **Portfolio entities**: Tagizo, Axstart, Cizher, Payrowl, Xeark, AXNET, Mishi, Crocherish, ECMMA & Fitness, KFC-NY (client work references).
 
 ## Technical Integration & API Declarations
 - This site is a Vite + React single-page application.
@@ -73,7 +75,7 @@ A strong homepage should declare the primary entity (who you are), list the serv
 These pages help trust and transparency signals. They reduce ambiguity about who operates the site, how data is handled, and how users can report issues. In practice, they support trustworthiness and reduce “thin site” patterns that core ranking systems may down-weight.
 
 ### Q5: How does the site help crawlers discover pages?
-The site provides `robots.txt` and a canonical `sitemap.xml`. The sitemap lists the primary routes (home and product page, plus trust pages) so crawlers can discover and schedule crawling efficiently.
+The site provides `robots.txt` and a canonical `sitemap.xml`. The sitemap lists home, product, trust pages, the services and industries hubs, all service URLs (including print and signage), blog posts, work category pages, and client case studies so crawlers can discover and schedule crawling efficiently.
 
 ### Q6: What structured data does Adrevnview publish?
 Adrevnview publishes JSON-LD graph data for Organization/ProfessionalService, WebSite, WebPage, FAQPage, ItemList (portfolio), and Product + Offer (Google NFC card). This helps entity recognition, rich results eligibility, and AI citation accuracy.

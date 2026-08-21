@@ -4,24 +4,27 @@ export const HOME_BODY = `
 <main>
   <nav aria-label="Primary">
     <a href="/">Home</a> · <a href="/about">About</a> · <a href="/work">Work</a> ·
-    <a href="/contact">Contact</a> · <a href="/services/custom-web-design">Services</a> ·
+    <a href="/contact">Contact</a> · <a href="/services">Services</a> ·
+    <a href="/services/printing-services">Print &amp; Signage</a> ·
     <a href="/geo-report">GEO Report</a>
   </nav>
   <article>
     <h1>Premium Web Design Agency</h1>
-    <p>For B2B, B2C and Enterprise Brands</p>
-    <p data-geo-chunk="summary">Adrevnview is a premium full-service digital agency specializing in custom web design, web development, branding, SEO, and Generative Engine Optimization (GEO) for B2B, B2C, and enterprise brands. We craft brand strategy, custom websites, and performance digital marketing that drive measurable growth.</p>
+    <p>Long Island custom websites, SEO, and print &amp; signage for B2B, B2C, and enterprise brands.</p>
+    <p data-geo-chunk="summary">Adrevnview is a Long Island, New York agency that designs custom websites and produces print and signage — restaurant menus, business cards, and panaflex banners — alongside branding, SEO, and Generative Engine Optimization (GEO) for B2B, B2C, and enterprise brands. We craft brand strategy, conversion-focused sites, and physical brand materials that drive measurable growth.</p>
     <section>
       <h2>Our Services</h2>
-      <p>Adrevnview delivers end-to-end digital services designed to help growth-focused brands win in search engines and AI assistants.</p>
+      <p>Adrevnview delivers end-to-end digital and print services designed to help growth-focused brands win in search engines, AI assistants, and the real world.</p>
       <ul>
         <li><a href="/services/custom-web-design">Custom Web Design</a> — Bespoke, conversion-focused designs built around your brand strategy.</li>
         <li><a href="/services/react-development">Web Development &amp; Integrations</a> — Full-stack development with CRM, ERP, and API integrations.</li>
         <li><a href="/services/shopify-development">eCommerce Design &amp; Development</a> — High-performance online stores that convert browsers into buyers.</li>
         <li><a href="/services/brand-identity">Branding &amp; Brand Identity</a> — Logos, visual systems, and brand guidelines for enterprise brands.</li>
         <li><a href="/services/seo-services">SEO &amp; Digital Marketing</a> — Data-driven campaigns that compound organic traffic and maximize ROI.</li>
+        <li><a href="/services/printing-services">Print &amp; Signage</a> — Restaurant menus, business cards, letterheads, brochures, and panaflex banners.</li>
         <li><a href="/services/website-redesign">Website Redesign</a> — Strategic redesigns that modernize your presence without losing SEO equity.</li>
       </ul>
+      <p>Print URLs: <a href="/services/printing-services">printing services</a> · <a href="/services/business-card-printing">business cards</a> · <a href="/services/letterhead-printing">letterhead</a> · <a href="/services/restaurant-menu-printing">restaurant menus</a> · <a href="/services/brochure-and-flyer-printing">brochures &amp; flyers</a> · <a href="/services/panaflex-and-banner-advertising">panaflex &amp; banners</a></p>
     </section>
     <section>
       <h2>Industries We Serve</h2>
@@ -44,11 +47,17 @@ export const HOME_BODY = `
     <section>
       <h2>Frequently Asked Questions</h2>
       <h3>What is Adrevnview?</h3>
-      <p>Adrevnview is a premium full-service digital agency specializing in custom web design, web development, branding, SEO, and Generative Engine Optimization (GEO) for B2B, B2C, and enterprise brands.</p>
-      <h3>What services does Adrevnview offer?</h3>
-      <p>Adrevnview offers custom web design, full-stack development, eCommerce design, brand identity systems, SEO, digital marketing, website redesigns, and GEO — making brands discoverable in search engines and AI assistants.</p>
+      <p>Adrevnview is a premium full-service agency specializing in custom web design, web development, branding, SEO, Generative Engine Optimization (GEO), and printing for B2B, B2C, and enterprise brands.</p>
       <h3>What is Generative Engine Optimization (GEO)?</h3>
       <p>GEO is the practice of structuring website content, metadata, and schema markup so AI assistants like ChatGPT, Perplexity, and Gemini can accurately understand, cite, and recommend your brand and services.</p>
+      <h3>What services does Adrevnview offer?</h3>
+      <p>Adrevnview offers custom web design, full-stack development, eCommerce design, brand identity systems, SEO, digital marketing, website redesigns, GEO, and printing — including restaurant menus, business cards, letterheads, brochures, and panaflex outdoor banners.</p>
+      <h3>Does Adrevnview design websites and print menus on Long Island?</h3>
+      <p>Yes. Adrevnview is based on Long Island, New York. We design custom websites and produce restaurant menus, business cards, letterheads, brochures, and panaflex banners for local shops and national brands.</p>
+      <h3>How long does a custom website take, and what do projects cost?</h3>
+      <p>Most custom website design projects run 4–8 weeks depending on scope, page count, and feedback cycles. Website, branding, and print work is quoted from a brief. The Google NFC Review Card is a $99 one-time product. Request a quote at <a href="/contact">/contact</a>.</p>
+      <h3>Do you build Shopify stores and React websites?</h3>
+      <p>Yes. We design and develop Shopify and Shopify Plus storefronts, and we build React marketing sites and applications (Vite or Next.js when the project needs it) with SEO-friendly rendering.</p>
       <h3>How do I contact Adrevnview?</h3>
       <p>Contact Adrevnview at hello@adrevnview.com or (516) 820-7863. Request a free consultation at <a href="/contact">https://www.adrevnview.com/contact</a>.</p>
     </section>
@@ -60,7 +69,7 @@ export const STATIC_PAGES = [
     path: "/about",
     title: "About Adrevnview — Web Design, SEO & GEO Agency",
     description: "Learn about Adrevnview: a premium digital agency delivering custom web design, development, branding, SEO, and Generative Engine Optimization (GEO).",
-    body: `<main><h1>About Adrevnview</h1><p data-geo-chunk="summary">Adrevnview is a premium full-service digital agency. We design and build high-performance websites and product experiences for growth-focused brands — with SEO and Generative Engine Optimization (GEO) built in from day one.</p><h2>What we do</h2><ul><li>Custom web design and conversion-focused UX</li><li>Full-stack development and integrations</li><li>Brand identity systems</li><li>SEO strategy and implementation</li><li>GEO: schema, content structure, and AI discoverability</li></ul><h2>How we work</h2><p>We combine strategy, design, and engineering into one delivery flow. Every build ships with measurable foundations: clean information architecture, performance, analytics-ready structure, and schema markup that helps search engines and AI systems understand what you do.</p><p>Email <a href="mailto:hello@adrevnview.com">hello@adrevnview.com</a> or call <a href="tel:5168207863">(516) 820-7863</a>.</p></main>`,
+    body: `<main><h1>About Adrevnview</h1><p data-geo-chunk="summary">Adrevnview is a Long Island full-service agency. We design high-performance websites and produce print and signage — menus, business cards, and panaflex banners — with SEO and Generative Engine Optimization (GEO) built in from day one.</p><h2>What we do</h2><ul><li>Custom web design and conversion-focused UX</li><li>Full-stack development and integrations</li><li>Brand identity systems</li><li>SEO strategy and implementation</li><li>GEO: schema, content structure, and AI discoverability</li><li>Print &amp; signage: <a href="/services/printing-services">printing services</a>, <a href="/services/business-card-printing">business cards</a>, <a href="/services/letterhead-printing">letterhead</a>, <a href="/services/restaurant-menu-printing">restaurant menus</a>, <a href="/services/brochure-and-flyer-printing">brochures &amp; flyers</a>, <a href="/services/panaflex-and-banner-advertising">panaflex banners</a></li></ul><h2>How we work</h2><p>We combine strategy, design, and engineering into one delivery flow. Every build ships with measurable foundations: clean information architecture, performance, analytics-ready structure, and schema markup that helps search engines and AI systems understand what you do.</p><p>Email <a href="mailto:hello@adrevnview.com">hello@adrevnview.com</a> or call <a href="tel:5168207863">(516) 820-7863</a>.</p></main>`,
   },
   {
     path: "/work",
@@ -72,7 +81,7 @@ export const STATIC_PAGES = [
     path: "/contact",
     title: "Contact Adrevnview — Request a Quote",
     description: "Contact Adrevnview for custom web design, development, SEO, and branding. Email hello@adrevnview.com or request a free consultation.",
-    body: `<main><h1>Contact Adrevnview</h1><p data-geo-chunk="summary">Tell us about your web design, development, SEO, or branding project. Our team responds within one business day with next steps and a tailored proposal.</p><p>Email: <a href="mailto:hello@adrevnview.com">hello@adrevnview.com</a><br>Phone: <a href="tel:5168207863">(516) 820-7863</a><br>Address: 1225 Franklin Ave, Suite 300, Garden City, NY 11530</p><h2>Request a quote</h2><p>Share your goals, timeline, and budget range. We serve B2B SaaS, eCommerce, healthcare, legal, real estate, manufacturing, and financial services organizations.</p><p>Try our free <a href="/geo-report">SEO &amp; GEO Report</a> to analyze any URL for search and AI visibility.</p></main>`,
+    body: `<main><h1>Contact Adrevnview</h1><p data-geo-chunk="summary">Tell us about your web design, development, SEO, branding, or print project. Our team responds within one business day with next steps and a tailored proposal.</p><p>Email: <a href="mailto:hello@adrevnview.com">hello@adrevnview.com</a><br>Phone: <a href="tel:5168207863">(516) 820-7863</a><br>Address: 1225 Franklin Ave, Suite 300, Garden City, NY 11530</p><h2>Request a quote</h2><p>Share your goals, timeline, and budget range — including print quantities and formats if you need menus, cards, or panaflex banners. We serve B2B SaaS, eCommerce, healthcare, legal, real estate, manufacturing, restaurants, and financial services organizations.</p><h2>Common questions</h2><h3>How do I request a project quote?</h3><p>Fill out the contact form or email hello@adrevnview.com with your project scope, timeline, and budget range. We respond within one business day.</p><h3>Can I request a quote for printing and signage?</h3><p>Yes. Include formats, quantities, and delivery location for menus, business cards, letterheads, brochures, or panaflex banners and we will quote production alongside design.</p><h3>What industries does Adrevnview serve?</h3><p>We work with B2B SaaS, eCommerce, healthcare, legal, real estate, manufacturing, financial services, restaurants, and enterprise organizations.</p><h3>Do you offer free SEO and GEO audits?</h3><p>Yes. Use our free GEO Report tool at /geo-report to analyze any URL for SEO and AI visibility readiness.</p><p>Try our free <a href="/geo-report">SEO &amp; GEO Report</a> to analyze any URL for search and AI visibility.</p></main>`,
   },
   {
     path: "/privacy",
@@ -107,8 +116,8 @@ export const STATIC_PAGES = [
   {
     path: "/services",
     title: "Digital Agency Services | Adrevnview",
-    description: "Full-service web design, development, SEO, GEO, branding, and digital marketing for B2B, B2C, and enterprise brands.",
-    body: `<main><h1>Our Services</h1><p data-geo-chunk="summary">Adrevnview is a full-service digital agency based on Long Island, New York. Custom web design, React development, Shopify eCommerce, SEO, GEO, and brand identity.</p><p><a href="/services/custom-web-design">Custom Web Design</a> · <a href="/services/react-development">Web Development</a> · <a href="/services/seo-services">SEO &amp; Marketing</a> · <a href="/contact">Contact us</a></p></main>`,
+    description: "Full-service web design, development, SEO, GEO, branding, printing, and digital marketing for B2B, B2C, and enterprise brands.",
+    body: `<main><h1>Our Services</h1><p data-geo-chunk="summary">Adrevnview is a full-service digital and print agency based on Long Island, New York. Custom web design, React development, Shopify eCommerce, SEO, GEO, brand identity, and print &amp; signage.</p><p><a href="/services/custom-web-design">Custom Web Design</a> · <a href="/services/react-development">Web Development</a> · <a href="/services/seo-services">SEO &amp; Marketing</a> · <a href="/services/printing-services">Print &amp; Signage</a> · <a href="/contact">Contact us</a></p><h2>Print &amp; Signage</h2><ul><li><a href="/services/printing-services">Printing Services</a></li><li><a href="/services/business-card-printing">Business Card Printing</a></li><li><a href="/services/letterhead-printing">Letterhead Printing</a></li><li><a href="/services/restaurant-menu-printing">Restaurant Menu Printing</a></li><li><a href="/services/brochure-and-flyer-printing">Brochure and Flyer Printing</a></li><li><a href="/services/panaflex-and-banner-advertising">Panaflex and Banner Advertising</a></li></ul></main>`,
   },
   {
     path: "/industries",
@@ -142,28 +151,134 @@ export const STATIC_PAGES = [
   },
 ];
 
-export const SERVICE_PAGES = [
-  ["custom-web-design", "Custom Web Design Services | Adrevnview", "Custom Web Design That Converts Visitors Into Clients", "Adrevnview delivers custom web design for B2B, B2C, and enterprise brands — strategy-led layouts, premium visuals, and conversion optimization.", "Your website is often the first sales conversation you have with a prospect. Adrevnview designs custom websites that communicate credibility in seconds, guide visitors toward clear actions, and reflect the quality of your brand at every breakpoint."],
-  ["landing-page-design", "Landing Page Design Agency | Adrevnview", "High-Converting Landing Page Design", "Conversion-optimized landing page design for campaigns, product launches, and paid media.", "Campaign traffic deserves a destination built to convert. We design landing pages with singular focus: one offer, one audience, one action."],
-  ["ui-ux-design", "UI/UX Design Services | Adrevnview", "UI/UX Design for Digital Products and Marketing Sites", "Professional UI/UX design — user flows, wireframes, prototypes, and interface systems.", "Great UX removes guesswork for your users and your sales team. Adrevnview maps user journeys and designs intuitive interfaces before development begins."],
-  ["website-redesign", "Website Redesign Services | Adrevnview", "Website Redesign Without Losing SEO Equity", "Strategic website redesigns that improve UX, performance, and conversions while protecting SEO rankings.", "An outdated website costs you trust and search visibility. We audit your current site, preserve what works, and deliver a modern experience."],
-  ["responsive-design", "Responsive Web Design | Adrevnview", "Responsive Web Design for Every Device", "Fluid layouts and touch-friendly interfaces optimized for mobile, tablet, and desktop users.", "More than half of web traffic is mobile. We design fluid layouts that adapt gracefully across screen sizes."],
-  ["react-development", "React Development Agency | Adrevnview", "React & Full-Stack Web Development", "Custom React applications, marketing sites, and SaaS frontends with API integrations.", "We build fast, maintainable React applications with modern tooling, TypeScript, and seamless API integrations."],
-  ["wordpress-development", "WordPress Development | Adrevnview", "WordPress Development & Custom Themes", "Custom WordPress themes and plugins for content-rich marketing sites.", "WordPress powers millions of sites. We build custom themes optimized for performance, security, and editor experience."],
-  ["shopify-development", "Shopify Development Agency | Adrevnview", "Shopify Store Design & Development", "High-converting Shopify stores with custom themes and conversion optimization.", "We design and develop Shopify stores that showcase products beautifully and streamline checkout."],
-  ["webflow-development", "Webflow Development | Adrevnview", "Webflow Design & Development", "Pixel-perfect Webflow sites with CMS collections and client-friendly editing.", "Webflow bridges design freedom and maintainability. We build Webflow sites your team can update without developers."],
-  ["api-integrations", "API Integrations | Adrevnview", "API Integrations & Automation", "Connect your website to CRMs, payment systems, marketing tools, and custom backends.", "We integrate Stripe, HubSpot, Salesforce, and custom APIs so your site works with your existing stack."],
-  ["seo-services", "SEO Services Agency | Adrevnview", "SEO Services That Compound Organic Traffic", "Technical SEO, on-page optimization, content strategy, and local SEO from Adrevnview.", "SEO is a compounding asset. We audit technical foundations, optimize on-page signals, and build content strategies that grow organic traffic."],
-  ["ppc-advertising", "PPC Advertising Agency | Adrevnview", "PPC Advertising & Paid Media Management", "Google Ads, Meta, and LinkedIn campaigns with landing pages built to convert.", "Paid media needs tight alignment between ads and landing pages. We manage campaigns and build pages that maximize ROAS."],
-  ["social-media-marketing", "Social Media Marketing | Adrevnview", "Social Media Marketing & Content", "Brand-aligned social content and paid social campaigns for B2B and B2C brands.", "We create social content systems that reinforce your brand and drive traffic to high-intent pages."],
-  ["email-marketing", "Email Marketing Agency | Adrevnview", "Email Marketing & Automation", "Newsletter design, drip campaigns, and marketing automation setup.", "Email remains one of the highest-ROI channels. We design templates and automation flows that nurture leads."],
-  ["content-strategy", "Content Strategy Services | Adrevnview", "Content Strategy for SEO & GEO", "Editorial calendars, topic clusters, and answer-first content for search and AI visibility.", "Content strategy aligns what you publish with what buyers and AI systems need to understand your expertise."],
-  ["logo-design", "Logo Design Agency | Adrevnview", "Professional Logo Design", "Distinctive logo design that works across digital and print applications.", "Your logo is the anchor of your visual identity. We design marks that are memorable, scalable, and on-brand."],
-  ["brand-identity", "Brand Identity Design | Adrevnview", "Brand Identity Systems", "Complete visual identity: logos, color palettes, typography, and brand applications.", "Brand identity is more than a logo. We build cohesive visual systems that scale across every touchpoint."],
-  ["brand-strategy", "Brand Strategy Consulting | Adrevnview", "Brand Strategy & Positioning", "Market positioning, messaging frameworks, and competitive differentiation.", "Strategy precedes design. We define positioning and messaging that guides every creative decision."],
-  ["visual-design-systems", "Visual Design Systems | Adrevnview", "Visual Design Systems & Component Libraries", "Figma libraries, design tokens, and documented patterns for consistent brand execution.", "Design systems keep teams aligned as products and marketing sites grow."],
-  ["brand-guidelines", "Brand Guidelines Development | Adrevnview", "Brand Guidelines and Style Guides", "Comprehensive brand books documenting logo usage, tone, and visual standards.", "Brand guidelines protect your investment in identity and ensure partners represent you correctly."],
+/** Keep in sync with `src/lib/content/services.ts` (slugify of title). */
+function svc(slug, title, headline, description, intro, faq = []) {
+  return { slug, title, headline, description, intro, faq };
+}
+
+export const PRINT_SERVICE_SLUGS = [
+  "printing-services",
+  "business-card-printing",
+  "letterhead-printing",
+  "restaurant-menu-printing",
+  "brochure-and-flyer-printing",
+  "panaflex-and-banner-advertising",
 ];
+
+const PRINT_RELATED = [
+  { href: "/services/printing-services", label: "Printing Services" },
+  { href: "/services/business-card-printing", label: "Business Cards" },
+  { href: "/services/letterhead-printing", label: "Letterhead" },
+  { href: "/services/restaurant-menu-printing", label: "Restaurant Menus" },
+  { href: "/services/brochure-and-flyer-printing", label: "Brochures & Flyers" },
+  { href: "/services/panaflex-and-banner-advertising", label: "Panaflex & Banners" },
+];
+
+export const SERVICE_PAGES = [
+  svc("custom-web-design", "Custom Web Design Services | Adrevnview", "Custom Web Design That Converts Visitors Into Clients", "Adrevnview delivers custom web design for B2B, B2C, and enterprise brands — strategy-led layouts, premium visuals, and conversion optimization.", "Your website is often the first sales conversation you have with a prospect. Adrevnview designs custom websites that communicate credibility in seconds, guide visitors toward clear actions, and reflect the quality of your brand at every breakpoint."),
+  svc("landing-page-design", "Landing Page Design Agency | Adrevnview", "High-Converting Landing Page Design", "Conversion-optimized landing page design for campaigns, product launches, and paid media.", "Campaign traffic deserves a destination built to convert. We design landing pages with singular focus: one offer, one audience, one action."),
+  svc("ui-ux-design", "UI/UX Design Services | Adrevnview", "UI/UX Design for Digital Products and Marketing Sites", "Professional UI/UX design — user flows, wireframes, prototypes, and interface systems.", "Great UX removes guesswork for your users and your sales team. Adrevnview maps user journeys and designs intuitive interfaces before development begins."),
+  svc("website-redesign", "Website Redesign Services | Adrevnview", "Website Redesign Without Losing SEO Equity", "Strategic website redesigns that improve UX, performance, and conversions while protecting SEO rankings.", "An outdated website costs you trust and search visibility. We audit your current site, preserve what works, and deliver a modern experience."),
+  svc("responsive-design", "Responsive Web Design | Adrevnview", "Responsive Web Design for Every Device", "Fluid layouts and touch-friendly interfaces optimized for mobile, tablet, and desktop users.", "More than half of web traffic is mobile. We design fluid layouts that adapt gracefully across screen sizes."),
+  svc("react-development", "React Development Agency | Adrevnview", "React Web Development for Modern Brands", "Expert React development for marketing sites, SaaS products, and interactive web applications — performance and SEO built in.", "React powers fast, interactive experiences when implemented with discipline. We build React frontends with component-driven architecture, optimized bundles, and prerendering strategies so search engines and AI crawlers can read your content."),
+  svc("wordpress-development", "WordPress Development Services | Adrevnview", "WordPress Development for Content-Driven Brands", "Custom WordPress development — bespoke themes, plugin integration, performance tuning, and SEO-ready content workflows.", "WordPress remains a powerful CMS when customized correctly. We build secure, fast WordPress sites with intuitive editing experiences and clean theme code that won't break with updates."),
+  svc("shopify-development", "Shopify Development Agency | Adrevnview", "Shopify Store Design and Development", "Shopify store design and development — custom themes, product page optimization, and eCommerce conversion improvements.", "Your Shopify store should sell as hard as your best salesperson. We design and develop Shopify experiences optimized for product discovery, trust signals, and frictionless checkout."),
+  svc("webflow-development", "Webflow Development Services | Adrevnview", "Webflow Design and Development", "Professional Webflow development — visual design, CMS collections, interactions, and SEO-ready publishing for marketing teams.", "Webflow empowers marketing teams to publish quickly without sacrificing design quality. We build Webflow sites with structured CMS collections, reusable components, and SEO best practices baked in."),
+  svc("api-integrations", "API Integration Services | Adrevnview", "API Integrations and Automation", "Custom API integrations — CRM, ERP, payment gateways, marketing automation, and third-party platform connections.", "Disconnected tools create manual work and lost leads. We integrate your website with HubSpot, Salesforce, Stripe, Zapier, and custom APIs so data flows automatically between systems."),
+  svc("seo-services", "SEO Services Agency | Adrevnview", "SEO Services That Compound Organic Traffic", "Full-service SEO — technical audits, on-page optimization, content strategy, and Generative Engine Optimization from Adrevnview.", "SEO is a long-term growth channel when executed with technical rigor and quality content. We fix crawl issues, optimize page structure, build topical authority, and align your site with how Google and AI assistants discover brands."),
+  svc("ppc-advertising", "PPC Advertising Services | Adrevnview", "PPC Advertising Management", "Google Ads and paid social campaign management with conversion-optimized landing pages from Adrevnview.", "Paid media works best with aligned messaging and landing experiences. We manage PPC campaigns and build dedicated landing pages that improve quality scores and lower cost per acquisition."),
+  svc("social-media-marketing", "Social Media Marketing | Adrevnview", "Social Media Marketing for Brand Growth", "Social media marketing strategy, content calendars, and creative assets for B2B and B2C brands.", "Social channels extend your brand voice and nurture prospects between website visits. We develop content strategies, creative templates, and posting calendars aligned with your business goals."),
+  svc("email-marketing", "Email Marketing Services | Adrevnview", "Email Marketing and Automation", "Email marketing strategy, template design, automation flows, and list growth for B2B and eCommerce brands.", "Email remains one of the highest-ROI marketing channels. We design templates, write nurture sequences, and set up automation that turns subscribers into customers."),
+  svc("content-strategy", "Content Strategy Services | Adrevnview", "Content Strategy for SEO and Thought Leadership", "Content strategy, editorial calendars, and SEO-driven topic planning from Adrevnview.", "Random blog posts don't build authority. We create content strategies mapped to search intent, buyer journeys, and AI citation opportunities — so every article supports pipeline and discoverability."),
+  svc("logo-design", "Logo Design Services | Adrevnview", "Logo Design That Defines Your Brand", "Professional logo design — concept exploration, refinement, and delivery of scalable brand marks.", "Your logo is the anchor of brand recognition. We explore concepts rooted in your positioning, refine with stakeholder feedback, and deliver production-ready files for every channel."),
+  svc("brand-identity", "Brand Identity Design | Adrevnview", "Complete Brand Identity Systems", "Full brand identity design — logos, typography, color palettes, and visual systems for consistent brand expression.", "A strong brand identity creates instant recognition and trust. We develop cohesive visual systems that work across your website, social channels, presentations, and product interfaces."),
+  svc("brand-strategy", "Brand Strategy Consulting | Adrevnview", "Brand Strategy and Positioning", "Brand strategy workshops — positioning, messaging, audience definition, and competitive differentiation.", "Design without strategy is decoration. We facilitate workshops to define your positioning, articulate your value proposition, and align messaging across marketing and sales touchpoints."),
+  svc("visual-design-systems", "Visual Design Systems | Adrevnview", "Visual Design Systems for Scale", "Design systems — components, tokens, documentation, and Figma libraries for consistent product and marketing design.", "As teams grow, inconsistency creeps in. We build design systems with reusable components, documented patterns, and Figma libraries so every page and product surface feels cohesive."),
+  svc("brand-guidelines", "Brand Guidelines Development | Adrevnview", "Brand Guidelines and Style Guides", "Brand style guides and guidelines documenting logo usage, colors, typography, and voice for internal and partner teams.", "Brand guidelines protect your investment in identity. We produce clear, accessible documentation so employees, agencies, and partners represent your brand correctly every time."),
+  svc(
+    "printing-services",
+    "Printing Services | Adrevnview",
+    "Printing Services for Brand, Retail, and Outdoor Advertising",
+    "Full-service printing from Adrevnview — restaurant menus, business cards, letterheads, brochures, flyers, and panaflex (penaflex) outdoor advertising.",
+    "Digital brands still need print that holds up in the real world. Adrevnview designs and produces business cards, letterheads, restaurant menus, brochures, flyers, and panaflex (penaflex) outdoor banners so every physical touchpoint matches the quality of your website and identity system.",
+    [
+      { question: "What print products do you offer?", answer: "Business cards, letterheads and envelopes, restaurant menus, brochures and flyers, posters, and panaflex / flex banner outdoor advertising. Ask if you need vehicle wraps or indoor stands." },
+      { question: "Do you only print, or do you design as well?", answer: "Both. We can design from your brand guidelines or print from approved artwork after a production check." },
+      { question: "Do you print restaurant menus and banners for Long Island businesses?", answer: "Yes. Adrevnview produces menus, cards, stationery, and panaflex signage for Long Island restaurants, shops, and campaigns — with files that match your website and brand." },
+      { question: "How does a print project start?", answer: "Share formats, quantities, and locations. We design or check artwork, send a proof, then print, finish, and deliver after approval. Quotes depend on specs — request one on the contact page." },
+    ],
+  ),
+  svc(
+    "business-card-printing",
+    "Business Card Printing | Adrevnview",
+    "Business Card Printing That Makes a First Impression",
+    "Custom business card printing — design, paper stock, foil, spot UV, and bulk runs. Print-ready files and fast turnaround from Adrevnview.",
+    "A business card is still the fastest way to leave a physical impression. We design and print cards that match your brand identity — from classic uncoated stock to foil, spot UV, and rounded-corner finishes — so every handshake reinforces the same quality as your website.",
+    [
+      { question: "Can you design the card and print it?", answer: "Yes. We handle design, print-ready files, and production — or we print from your existing artwork after a quality check." },
+      { question: "Do you offer NFC review cards?", answer: "Yes. Pair printed business cards with our Google NFC Review Card so customers can tap to leave a review." },
+      { question: "Can you print bulk cards for a sales team?", answer: "Yes. We produce bulk runs and keep reprint-friendly files so additional boxes match the first order." },
+      { question: "Do you print business cards for Long Island companies?", answer: "Yes. Cards are designed to match your digital identity and produced for Long Island and New York teams as well as brands elsewhere." },
+    ],
+  ),
+  svc(
+    "letterhead-printing",
+    "Letterhead Printing Services | Adrevnview",
+    "Letterhead and Stationery Printing",
+    "Professional letterhead, envelope, and stationery printing — matching your logo, colors, and brand guidelines from Adrevnview.",
+    "Contracts, invoices, and client letters should look as considered as your website. We design and print letterheads, envelopes, and complementary stationery with accurate color matching so your paperwork feels like part of one brand system.",
+    [
+      { question: "Can you supply Word templates with the printed letterhead?", answer: "Yes. We deliver matching digital templates so staff can type letters that align with the printed stock." },
+      { question: "Do you print envelopes and compliment slips too?", answer: "Yes. Letterheads, envelopes, and compliment slips are designed as one stationery set." },
+      { question: "Can you match our existing brand colors?", answer: "Yes. We aim for Pantone and CMYK accuracy so paperwork matches your logo and website." },
+      { question: "Is letterhead printing available on Long Island?", answer: "Yes. We design and print stationery for Long Island offices and for brands that need matching letterhead wherever they send mail." },
+    ],
+  ),
+  svc(
+    "restaurant-menu-printing",
+    "Restaurant Menu Printing | Adrevnview",
+    "Restaurant Menu Design and Printing",
+    "Restaurant menu design and printing — dine-in menus, takeout menus, table tents, and laminated cards from Adrevnview.",
+    "A menu is a sales tool, not just a list. We design restaurant menus that highlight signatures, pair photos with prices cleanly, and print on stocks that survive spills, lamination, and seasonal updates — from dine-in books to takeout flyers and table tents.",
+    [
+      { question: "Can you update menus when prices change?", answer: "Yes. We keep print-ready files so seasonal or price updates are fast reprints rather than full redesigns." },
+      { question: "Do you print takeout menus and table tents?", answer: "Yes. Dine-in books, takeout flyers, table tents, and window cards can share one menu system." },
+      { question: "Can restaurant menus be laminated?", answer: "Yes. We print on stocks that survive spills, with lamination and coatings when the floor needs it." },
+      { question: "Do you design menus for Long Island restaurants?", answer: "Yes. We design and print menus for Long Island and New York restaurants so the printed menu sells as clearly as the website." },
+    ],
+  ),
+  svc(
+    "brochure-and-flyer-printing",
+    "Brochure and Flyer Printing | Adrevnview",
+    "Brochure and Flyer Printing for Campaigns",
+    "Brochure, flyer, and catalog printing — tri-folds, leave-behinds, and campaign collateral designed and printed by Adrevnview.",
+    "Print still converts at events, storefronts, and sales meetings. We design and print brochures, flyers, catalogs, and posters with the same visual system as your digital brand — so a tri-fold on a counter feels like an extension of your website, not a leftover.",
+    [
+      { question: "Do you print posters and catalogs as well?", answer: "Yes. Brochures and flyers are the core offering; posters, catalogs, and leave-behinds use the same design and production workflow." },
+      { question: "What brochure formats do you offer?", answer: "Tri-fold, bi-fold, and booklet formats, plus flyer and poster runs for promotions." },
+      { question: "Can flyers match our website branding?", answer: "Yes. Campaign collateral uses the same visual system as your digital brand so a tri-fold feels like the site, not a leftover." },
+      { question: "Do you deliver brochures on Long Island?", answer: "Yes. We design, print, and deliver campaign print for Long Island and NYC-metro businesses, with reprint files for the next run." },
+    ],
+  ),
+  svc(
+    "panaflex-and-banner-advertising",
+    "Panaflex & Flex Banner Printing | Adrevnview",
+    "Panaflex, Flex, and Outdoor Banner Advertising",
+    "Panaflex (penaflex) and flex banner printing for shops, hoardings, and outdoor ads — large-format design and production from Adrevnview.",
+    "Outdoor advertising has to read from the street in a second. We design and produce panaflex (also called penaflex or flex) banners, shop fascias, hoardings, and pole banners with high-contrast layouts, durable vinyl, and sizes matched to your storefront or campaign site.",
+    [
+      { question: "What is panaflex or penaflex printing?", answer: "Panaflex (often spelled penaflex) is large-format flex vinyl used for shop signs, street banners, and outdoor ads. We design the artwork and print it at the size your location needs." },
+      { question: "Can you print vehicle wraps and indoor signage too?", answer: "Yes. Ask about vehicle wraps, roll-up stands, and indoor boards — they follow the same large-format workflow as outdoor flex." },
+      { question: "Do you measure the storefront before printing?", answer: "Yes. Site measure and viewing distance come first so type and logos read from the street." },
+      { question: "Do you produce panaflex for Long Island shop fronts?", answer: "Yes. We design and print shop-front panaflex, hoardings, and banners for Long Island locations and campaign sites." },
+    ],
+  ),
+].map((page) => ({
+  ...page,
+  links: PRINT_SERVICE_SLUGS.includes(page.slug) ? PRINT_RELATED : [],
+}));
+
+export const SERVICE_SLUGS = SERVICE_PAGES.map((page) => page.slug);
 
 export const INDUSTRY_PAGES = [
   ["healthcare", "Healthcare Web Design", "HIPAA-aware websites and patient-focused digital experiences for healthcare providers and med-tech brands.", "Healthcare organizations need websites that build trust, communicate compliance, and make it easy for patients to take action."],
@@ -194,3 +309,17 @@ export const CLIENT_PAGES = [
   ["ecmmaandfitness", "ECMMA & Fitness", "Fitness brand digital presence with class scheduling and member engagement features."],
   ["kfc-ny", "KFC NY", "Regional franchise marketing site with local SEO and promotional campaign landing pages."],
 ];
+
+export const INDUSTRY_SLUGS = INDUSTRY_PAGES.map((page) => page[0]);
+export const BLOG_SLUGS = BLOG_PAGES.map((page) => page[0]);
+export const CLIENT_SLUGS = CLIENT_PAGES.map((page) => page[0]);
+export const STATIC_PATHS = STATIC_PAGES.map((page) => page.path);
+
+export function allPublicPaths() {
+  const paths = new Set(["/", ...STATIC_PATHS]);
+  for (const slug of SERVICE_SLUGS) paths.add(`/services/${slug}`);
+  for (const slug of INDUSTRY_SLUGS) paths.add(`/industries/${slug}`);
+  for (const slug of BLOG_SLUGS) paths.add(`/blog/${slug}`);
+  for (const slug of CLIENT_SLUGS) paths.add(`/${slug}`);
+  return [...paths];
+}

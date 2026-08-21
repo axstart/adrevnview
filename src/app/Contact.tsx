@@ -3,21 +3,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import { SiteLayout } from "@/app/components/SiteLayout";
 import { SeoHead } from "@/components/seo/SeoHead";
 import { ORG, PAGES } from "@/lib/seo/siteConfig";
-
-const FAQ = [
-  {
-    question: "How do I request a project quote?",
-    answer: "Fill out the contact form below or email hello@adrevnview.com with your project scope, timeline, and budget range. We respond within one business day.",
-  },
-  {
-    question: "What industries does Adrevnview serve?",
-    answer: "We work with B2B SaaS, eCommerce, healthcare, legal, real estate, manufacturing, financial services, and enterprise organizations.",
-  },
-  {
-    question: "Do you offer free SEO and GEO audits?",
-    answer: "Yes. Use our free GEO Report tool at /geo-report to analyze any URL for SEO and AI visibility readiness.",
-  },
-];
+import { CONTACT_FAQ } from "@/lib/seo/structuredData";
 
 export default function Contact() {
   return (
@@ -77,7 +63,7 @@ export default function Contact() {
         <section>
           <h2 className="text-2xl font-bold mb-6" style={{ fontFamily: "Manrope, sans-serif" }}>Common questions</h2>
           <div className="space-y-4">
-            {FAQ.map((item) => (
+            {CONTACT_FAQ.map((item) => (
               <div key={item.question} className="rounded-xl border border-sky-900/20 bg-card p-5">
                 <h3 className="font-semibold mb-2">{item.question}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{item.answer}</p>

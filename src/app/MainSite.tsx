@@ -204,14 +204,38 @@ function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
-          For <span className="text-foreground font-medium">B2B, B2C & Enterprise Brands</span>
+          Long Island custom websites, SEO, and print & signage for <span className="text-foreground font-medium">B2B, B2C & Enterprise Brands</span>
         </p>
-        <p data-geo-chunk="summary" className="text-base text-muted-foreground max-w-xl mx-auto mb-12" style={{ fontFamily: "Inter, sans-serif" }}>
-          We craft brand strategy, custom websites, and performance digital marketing that drive measurable growth.
+        <p data-geo-chunk="summary" className="text-base text-muted-foreground max-w-2xl mx-auto mb-12" style={{ fontFamily: "Inter, sans-serif" }}>
+          Adrevnview designs conversion-focused websites from Long Island, New York, and produces print and signage — restaurant menus, business cards, and panaflex banners — with branding, SEO, and GEO built in.
         </p>
 
-        {/* Gym & academy management promo */}
-        <div className="max-w-3xl mx-auto mb-10">
+        {/* Trust indicators */}
+        <div className="flex flex-wrap items-center justify-center gap-6 mb-12">
+          <div className="flex items-center gap-2">
+            {[1, 2, 3, 4, 5].map((i) => (
+              <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+            ))}
+            <span className="text-muted-foreground text-sm ml-1" style={{ fontFamily: "Inter, sans-serif" }}>5 Star Client & Google Reviews</span>
+          </div>
+          <div className="w-px h-5 bg-sky-900/50 hidden sm:block" />
+          <div className="text-muted-foreground text-sm" style={{ fontFamily: "Inter, sans-serif" }}>
+            <CountUp value="10+" className="text-foreground font-medium" /> Live Client Platforms
+          </div>
+        </div>
+
+        {/* CTAs */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <SpringLink to="/contact" className="px-8 py-4 rounded-full bg-gradient-to-r from-sky-600 to-cyan-600 text-white font-bold text-base hover:from-sky-500 hover:to-cyan-500 transition-all shadow-xl shadow-sky-900/50 gap-2" style={{ fontFamily: "Manrope, sans-serif" }}>
+            Request a Quote <ArrowRight className="w-4 h-4" />
+          </SpringLink>
+          <SpringLink to="/work" className="px-8 py-4 rounded-full border border-sky-500/30 text-foreground font-semibold text-base hover:bg-sky-900/20 transition-all gap-2" style={{ fontFamily: "Manrope, sans-serif" }}>
+            <Play className="w-4 h-4 fill-current" /> See Our Work
+          </SpringLink>
+        </div>
+
+        {/* Gym & academy management promo — below primary H1/CTAs */}
+        <div className="max-w-3xl mx-auto mt-14 mb-4">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-sky-500/25 bg-card/60 text-foreground/90 text-sm font-semibold backdrop-blur-sm">
             <Dumbbell className="w-4 h-4 text-sky-300" />
             Gym & academy owners: automate ops + lead gen with <span className="text-foreground">Matzop</span>
@@ -238,30 +262,6 @@ function Hero() {
               Get a Demo
             </SpringAnchor>
           </div>
-        </div>
-
-        {/* Trust indicators */}
-        <div className="flex flex-wrap items-center justify-center gap-6 mb-12">
-          <div className="flex items-center gap-2">
-            {[1, 2, 3, 4, 5].map((i) => (
-              <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-            ))}
-            <span className="text-muted-foreground text-sm ml-1" style={{ fontFamily: "Inter, sans-serif" }}>5 Star Client & Google Reviews</span>
-          </div>
-          <div className="w-px h-5 bg-sky-900/50 hidden sm:block" />
-          <div className="text-muted-foreground text-sm" style={{ fontFamily: "Inter, sans-serif" }}>
-            <CountUp value="10+" className="text-foreground font-medium" /> Live Client Platforms
-          </div>
-        </div>
-
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <SpringLink to="/contact" className="px-8 py-4 rounded-full bg-gradient-to-r from-sky-600 to-cyan-600 text-white font-bold text-base hover:from-sky-500 hover:to-cyan-500 transition-all shadow-xl shadow-sky-900/50 gap-2" style={{ fontFamily: "Manrope, sans-serif" }}>
-            Request a Quote <ArrowRight className="w-4 h-4" />
-          </SpringLink>
-          <SpringLink to="/work" className="px-8 py-4 rounded-full border border-sky-500/30 text-foreground font-semibold text-base hover:bg-sky-900/20 transition-all gap-2" style={{ fontFamily: "Manrope, sans-serif" }}>
-            <Play className="w-4 h-4 fill-current" /> See Our Work
-          </SpringLink>
         </div>
       </div>
     </section>
@@ -640,7 +640,7 @@ function HomeFaqSection() {
                 className="cursor-pointer list-none px-6 py-4 flex items-center justify-between gap-4"
                 style={{ fontFamily: "Manrope, sans-serif" }}
               >
-                <h2 className="text-foreground font-semibold text-base m-0">{item.question}</h2>
+                <h3 className="text-foreground font-semibold text-base m-0">{item.question}</h3>
                 <span className="text-sky-400 group-open:rotate-180 transition-transform">⌄</span>
               </summary>
               <div className="px-6 pb-5 -mt-1">
