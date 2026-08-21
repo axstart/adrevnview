@@ -27,7 +27,7 @@ export default function Contact() {
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4" style={{ fontFamily: "Manrope, sans-serif" }}>Contact Adrevnview</h1>
         <p data-geo-chunk="summary" className="text-muted-foreground text-lg mb-10 max-w-2xl leading-relaxed">
-          Tell us about your web design, development, SEO, or branding project. Our team will respond within one business day with next steps and a tailored proposal.
+          Tell us about your web design, development, SEO, branding, or print project. Our team will respond within one business day with next steps and a tailored proposal.
         </p>
 
         <div className="grid md:grid-cols-2 gap-10 mb-16">

@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { SiteLayout } from "@/app/components/SiteLayout";
 import { SeoHead } from "@/components/seo/SeoHead";
 import { SpringCardLink } from "@/components/SpringCard";
+import { PrintSamplesGallery } from "@/app/components/PrintSamplesGallery";
 import { FOOTER_LINKS, getServicePath, SERVICES } from "@/lib/content/services";
 
 export default function Services() {
@@ -10,7 +11,7 @@ export default function Services() {
     <SiteLayout mainClassName="px-6 py-12">
       <SeoHead
         title="Digital Agency Services | Adrevnview"
-        description="Full-service web design, development, SEO, GEO, branding, and digital marketing for B2B, B2C, and enterprise brands on Long Island and nationwide."
+        description="Full-service web design, development, SEO, GEO, branding, printing, and digital marketing for B2B, B2C, and enterprise brands on Long Island and nationwide."
         path="/services"
       />
 
@@ -20,7 +21,7 @@ export default function Services() {
           Our Services
         </h1>
         <p className="text-muted-foreground text-lg leading-relaxed mb-14 max-w-3xl" data-geo-chunk="summary">
-          Adrevnview is a full-service digital agency based on Long Island, New York. From custom web design and React development to SEO, GEO, and brand identity — every engagement ships with performance and discoverability built in.
+          Adrevnview is a full-service digital and print agency based on Long Island, New York. From custom web design and React development to SEO, GEO, brand identity, and printing — menus, business cards, letterheads, brochures, and panaflex banners — every engagement ships with brand consistency across screens and paper.
         </p>
 
         {Object.entries(FOOTER_LINKS).map(([category, links]) => (
@@ -28,6 +29,11 @@ export default function Services() {
             <h2 className="text-2xl font-bold text-foreground mb-6" style={{ fontFamily: "Manrope, sans-serif" }}>
               {category}
             </h2>
+            {category === "Printing" ? (
+              <div className="mb-8">
+                <PrintSamplesGallery slug="printing-services" showFilters />
+              </div>
+            ) : null}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {links.map(({ label, slug }) => {
                 const service = SERVICES.find((s) => s.slug === slug);

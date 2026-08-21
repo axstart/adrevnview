@@ -4,6 +4,7 @@ import { SiteLayout } from "@/app/components/SiteLayout";
 import { SeoHead } from "@/components/seo/SeoHead";
 import { SpringCard } from "@/components/SpringCard";
 import { SpringLink } from "@/components/SpringButton";
+import { PrintSamplesGallery } from "@/app/components/PrintSamplesGallery";
 import { SERVICE_BY_SLUG } from "@/lib/content/services";
 import { SITE_URL } from "@/lib/seo/siteConfig";
 
@@ -30,6 +31,10 @@ export default function ServicePage() {
         <p className="text-sky-400 text-xs font-semibold tracking-widest uppercase mb-3">{service.category.replace("-", " ")}</p>
         <h1 className="text-4xl md:text-5xl font-extrabold mb-6" style={{ fontFamily: "Manrope, sans-serif" }}>{service.headline}</h1>
         <p data-geo-chunk="summary" className="text-muted-foreground text-lg leading-relaxed mb-10 max-w-3xl">{service.intro}</p>
+
+        {service.category === "printing" ? (
+          <PrintSamplesGallery slug={slug} showFilters={slug === "printing-services"} />
+        ) : null}
 
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: "Manrope, sans-serif" }}>What you get</h2>

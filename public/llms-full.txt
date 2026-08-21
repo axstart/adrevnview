@@ -11,7 +11,7 @@ Adrevnview is a premium full-service digital agency for B2B, B2C, and enterprise
 
 ## Core Domain Entities
 - **Organization**: Adrevnview (digital agency).
-- **Services**: custom web design, web development/integrations, branding, SEO, GEO, eCommerce, website redesign.
+- **Services**: custom web design, web development/integrations, branding, SEO, GEO, eCommerce, website redesign, printing and signage (menus, business cards, letterheads, brochures, panaflex banners).
 - **Product**: Google NFC Review Card ($99 one-time).
 - **Portfolio entities**: Tagizo, Axstart, Cizher, Payrowl, Xeark, AXNET, Mishi, Crocherish (client work references).
 
@@ -52,6 +52,9 @@ Technical SEO, content structure, metadata, schema markup, and conversion-orient
 
 ### Generative Engine Optimization (GEO)
 GEO aligns a website’s structure and semantics so AI systems can accurately interpret and cite content. This includes entity graphs (JSON-LD), FAQ blocks, consistent canonical URLs, and machine-readable reference maps (`llms.txt`).
+
+### Printing & Signage
+Physical brand materials designed and produced to match digital identity: restaurant menus, business cards, letterheads, brochures and flyers, and panaflex (penaflex) outdoor banners for shop fronts and advertising.
 
 ---
 

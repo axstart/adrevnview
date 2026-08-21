@@ -25,6 +25,7 @@ export default function About() {
               <li>Brand identity systems</li>
               <li>SEO strategy and implementation</li>
               <li>GEO: schema, content structure, and AI discoverability</li>
+              <li>Print and signage: menus, cards, letterheads, panaflex banners</li>
             </ul>
           </div>
           <div className="rounded-2xl border border-sky-900/20 bg-card p-7">

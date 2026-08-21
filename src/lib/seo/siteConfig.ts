@@ -37,6 +37,10 @@ export const ORG = {
     "Digital marketing",
     "SaaS product design",
     "Google NFC review cards",
+    "Printing services",
+    "Business card printing",
+    "Restaurant menu printing",
+    "Panaflex and flex banner advertising",
   ],
 };
 
@@ -45,7 +49,7 @@ export const DEFAULT_SEO = {
   description:
     "Adrevnview is a premium web design agency for B2B, B2C, and enterprise brands. Custom websites, branding, SEO, and Generative Engine Optimization (GEO) that drive measurable growth.",
   keywords:
-    "web design agency, custom web design, SEO agency, GEO optimization, digital marketing, eCommerce design, Long Island web agency, New York web design, B2B web design",
+    "web design agency, custom web design, SEO agency, GEO optimization, digital marketing, eCommerce design, printing services, business cards, restaurant menus, panaflex, Long Island web agency, New York web design, B2B web design",
 };
 
 export const PAGES = {
@@ -53,7 +57,7 @@ export const PAGES = {
     path: "/",
     title: "Adrevnview — Premium Web Design Agency | SEO & GEO",
     description:
-      "Full-service digital agency for B2B, B2C, and enterprise brands. Custom web design, development, SEO, GEO, and conversion-focused marketing.",
+      "Full-service digital and print agency for B2B, B2C, and enterprise brands. Custom web design, development, SEO, GEO, branding, and printing.",
   },
   googleNfc: {
     path: "/googlenfc",
@@ -65,7 +69,7 @@ export const PAGES = {
     path: "/about",
     title: "About Adrevnview — Web Design, SEO & GEO Agency",
     description:
-      "Learn about Adrevnview: a premium digital agency delivering custom web design, development, branding, SEO, and Generative Engine Optimization (GEO).",
+      "Learn about Adrevnview: a premium agency delivering custom web design, development, branding, SEO, GEO, and printing.",
   },
   privacy: {
     path: "/privacy",
@@ -95,13 +99,13 @@ export const PAGES = {
     path: "/contact",
     title: "Contact Adrevnview — Request a Quote",
     description:
-      "Contact Adrevnview for custom web design, development, SEO, and branding. Email hello@adrevnview.com or request a free consultation.",
+      "Contact Adrevnview for custom web design, development, SEO, branding, and printing. Email hello@adrevnview.com or request a free consultation.",
   },
   services: {
     path: "/services",
     title: "Digital Agency Services | Adrevnview",
     description:
-      "Full-service web design, development, SEO, GEO, branding, and digital marketing for B2B, B2C, and enterprise brands.",
+      "Full-service web design, development, SEO, GEO, branding, printing, and digital marketing for B2B, B2C, and enterprise brands.",
   },
   industries: {
     path: "/industries",

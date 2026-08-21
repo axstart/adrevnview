@@ -7,8 +7,8 @@ export function SiteFooter() {
   return (
     <footer className="bg-muted border-t border-sky-900/20 pt-20 pb-10 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-10 mb-16">
-          <div className="col-span-2 md:col-span-4 lg:col-span-1">
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-7 gap-10 mb-16">
+          <div className="col-span-2 md:col-span-1">
             <Logo className="mb-4" iconClassName="h-8 w-7" textClassName="h-5 w-auto" />
             <p className="text-muted-foreground text-sm leading-relaxed mb-5" style={{ fontFamily: "Inter, sans-serif" }}>
               Premium web design agency for B2B, B2C & enterprise brands.

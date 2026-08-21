@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router";
-import { ArrowRight, Star, MapPin, Phone, Mail, Play, Check, ChevronDown, Dumbbell, Sparkles, Search, Globe } from "lucide-react";
+import { ArrowRight, Star, MapPin, Phone, Mail, Play, ChevronDown, Dumbbell, Sparkles, Search, Globe } from "lucide-react";
 import { GoogleNfcSection } from "@/app/components/nfc/GoogleNfcSection";
 import { SiteFooter } from "@/app/components/SiteFooter";
 import { SiteHeader } from "@/app/components/SiteHeader";
@@ -24,6 +24,7 @@ const HOME_SERVICE_LINKS: Record<string, string> = {
   "eCommerce Design & Dev": "shopify-development",
   "Branding & Brand Identity": "brand-identity",
   "SEO & Digital Marketing": "seo-services",
+  "Print & Signage": "printing-services",
   "Website Redesign": "website-redesign",
 };
 
@@ -54,6 +55,11 @@ const SERVICES = [
     desc: "Data-driven campaigns that compound organic traffic and maximize ROI.",
   },
   {
+    icon: "▣",
+    title: "Print & Signage",
+    desc: "Menus, business cards, letterheads, brochures, and panaflex banners that match your brand in the real world.",
+  },
+  {
     icon: "◫",
     title: "Website Redesign",
     desc: "Strategic redesigns that modernize your digital presence without losing SEO equity.",
@@ -76,7 +82,6 @@ const STATS = [
   { value: "12+", label: "Years in Business" },
   { value: "10+", label: "Live Client Platforms" },
   { value: "5★", label: "Client & Google Rating" },
-  { value: "#1", label: "Top Digital Agency — Clutch 2025" },
 ];
 
 const TESTIMONIALS = [
@@ -138,17 +143,6 @@ const TESTIMONIALS = [
   },
 ];
 
-const AWARDS = [
-  "IMA Award of Excellence",
-  "Awwwards Site of the Day",
-  "Horizon Interactive Gold",
-  "Marcom Platinum Award",
-  "W3 Award Gold",
-  "Clutch Top Agency 2025",
-];
-
-const MEDIA = ["Tech Brief", "Digital Weekly", "Business Pulse", "Market Insider", "Innovation Today", "Agency Watch"];
-
 const LOCATIONS = [
   {
     city: "Long Island",
@@ -197,11 +191,9 @@ function Hero() {
       <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background/20 via-transparent to-background/80" />
 
       <div className="relative max-w-7xl mx-auto px-6 text-center">
-        {/* Award badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary text-secondary-foreground text-xs font-medium mb-8" style={{ fontFamily: "Inter, sans-serif" }}>
-          <Star className="w-3.5 h-3.5 fill-sky-400 text-sky-400" />
-          Top Digital Agency 2025 — Clutch
-          <Star className="w-3.5 h-3.5 fill-sky-400 text-sky-400" />
+          <MapPin className="w-3.5 h-3.5 text-sky-400" />
+          Long Island, New York · 12+ Years in Business
         </div>
 
         <h1 data-speakable="true" className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-foreground leading-[1.05] tracking-tight mb-6" style={{ fontFamily: "Manrope, sans-serif" }}>
@@ -279,7 +271,7 @@ function Hero() {
 function StatsBar() {
   return (
     <section className="bg-card border-y border-sky-900/20 py-12">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-3 gap-8">
         {STATS.map((s) => (
           <div key={s.label} className="text-center">
             <div className="text-4xl font-extrabold text-foreground mb-1" style={{ fontFamily: "Manrope, sans-serif" }}>
@@ -377,7 +369,7 @@ function PortfolioSection() {
           <div>
             <p className="text-sky-400 text-sm font-semibold tracking-widest uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>Our Work</p>
             <h2 className="text-4xl md:text-5xl font-extrabold text-foreground" style={{ fontFamily: "Manrope, sans-serif" }}>
-              <GradientText>Award-Winning</GradientText><br />Case Studies
+              Selected<br /><GradientText>Case Studies</GradientText>
             </h2>
           </div>
           <div className="flex gap-1 p-1 rounded-full border border-sky-900/30 bg-background">
@@ -563,69 +555,6 @@ function TestimonialsSection() {
             />
           ))}
         </div>
-      </div>
-    </section>
-  );
-}
-
-function AwardsSection() {
-  const [tab, setTab] = useState<"Awards" | "Media" | "Expertise">("Awards");
-
-  return (
-    <section className="py-28 px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <p className="text-sky-400 text-sm font-semibold tracking-widest uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>Recognition</p>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-foreground" style={{ fontFamily: "Manrope, sans-serif" }}>
-            Industry <GradientText>Awards & Recognition</GradientText>
-          </h2>
-        </div>
-
-        <div className="flex justify-center gap-1 p-1 rounded-full border border-sky-900/30 bg-card w-fit mx-auto mb-12">
-          {(["Awards", "Media", "Expertise"] as const).map((t) => (
-            <SpringPressable
-              key={t}
-              onClick={() => setTab(t)}
-              className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all ${
-                tab === t ? "bg-gradient-to-r from-sky-600 to-cyan-600 text-white" : "text-muted-foreground hover:text-foreground"
-              }`}
-              style={{ fontFamily: "Manrope, sans-serif" }}
-            >
-              {t}
-            </SpringPressable>
-          ))}
-        </div>
-
-        {tab === "Awards" && (
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {AWARDS.map((award) => (
-              <SpringCard key={award} className="flex items-center gap-3 p-5 rounded-xl bg-card border border-sky-900/20 hover:border-sky-600/30 transition-all">
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-sky-600 to-cyan-600 flex items-center justify-center shrink-0">
-                  <Check className="w-4 h-4 text-foreground" />
-                </div>
-                <span className="text-foreground/90 text-sm font-medium" style={{ fontFamily: "Inter, sans-serif" }}>{award}</span>
-              </SpringCard>
-            ))}
-          </div>
-        )}
-
-        {tab === "Media" && (
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {MEDIA.map((m) => (
-              <SpringCard key={m} className="flex items-center justify-center p-8 rounded-xl bg-card border border-sky-900/20 hover:border-sky-600/30 transition-all">
-                <span className="text-foreground/90 font-bold text-lg" style={{ fontFamily: "Manrope, sans-serif" }}>{m}</span>
-              </SpringCard>
-            ))}
-          </div>
-        )}
-
-        {tab === "Expertise" && (
-          <div className="flex flex-wrap justify-center gap-3">
-            {["Custom Web Design", "UX/UI Design", "Web Development", "React Development", "eCommerce", "Shopify", "WordPress", "Webflow", "SEO", "PPC", "Social Media Marketing", "Brand Identity", "Logo Design", "Content Strategy", "Email Marketing", "Conversion Optimization", "Analytics & Reporting", "ADA Compliance", "Web Accessibility", "CRO"].map((tag) => (
-              <span key={tag} className="px-4 py-2 rounded-full border border-border bg-secondary text-secondary-foreground text-sm font-medium" style={{ fontFamily: "Inter, sans-serif" }}>{tag}</span>
-            ))}
-          </div>
-        )}
       </div>
     </section>
   );
@@ -842,7 +771,6 @@ export default function App() {
         <PortfolioSection />
         <ProcessSection />
         <TestimonialsSection />
-        <AwardsSection />
         <LocationsSection />
         <HomeFaqSection />
         <ContactSection />

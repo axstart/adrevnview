@@ -1,7 +1,7 @@
 export type ServicePage = {
   slug: string;
   title: string;
-  category: "web-design" | "development" | "marketing" | "branding";
+  category: "web-design" | "development" | "marketing" | "branding" | "printing";
   headline: string;
   description: string;
   seoTitle: string;
@@ -264,6 +264,87 @@ const SERVICE_DEFINITIONS: Omit<ServicePage, "slug">[] = [
     process: ["Asset collection", "Guideline writing", "Visual examples", "Distribution format"],
     faq: [{ question: "What format are guidelines delivered in?", answer: "PDF and Figma-linked digital formats, optimized for sharing with vendors and partners." }],
   },
+  {
+    title: "Printing Services",
+    category: "printing",
+    headline: "Printing Services for Brand, Retail, and Outdoor Advertising",
+    description: "Menus, business cards, letterheads, brochures, panaflex banners, and campaign print — designed and produced to match your brand.",
+    seoTitle: "Printing Services | Adrevnview",
+    seoDescription: "Full-service printing from Adrevnview — restaurant menus, business cards, letterheads, brochures, flyers, and panaflex (penaflex) outdoor advertising.",
+    intro: "Digital brands still need print that holds up in the real world. Adrevnview designs and produces business cards, letterheads, restaurant menus, brochures, flyers, and panaflex (penaflex) outdoor banners so every physical touchpoint matches the quality of your website and identity system.",
+    benefits: ["Restaurant and takeout menu printing", "Business cards and letterhead stationery", "Brochures, flyers, and posters", "Panaflex, flex banners, and shop signage", "Brand-matched color and print-ready files"],
+    process: ["Brief on formats, quantities, and locations", "Design or artwork check", "Proof approval", "Print production, finishing, and delivery"],
+    faq: [
+      { question: "What print products do you offer?", answer: "Business cards, letterheads and envelopes, restaurant menus, brochures and flyers, posters, and panaflex / flex banner outdoor advertising. Ask if you need vehicle wraps or indoor stands." },
+      { question: "Do you only print, or do you design as well?", answer: "Both. We can design from your brand guidelines or print from approved artwork after a production check." },
+    ],
+  },
+  {
+    title: "Business Card Printing",
+    category: "printing",
+    headline: "Business Card Printing That Makes a First Impression",
+    description: "Premium business cards with custom finishes, paper stocks, and print-ready design for sales teams and storefronts.",
+    seoTitle: "Business Card Printing | Adrevnview",
+    seoDescription: "Custom business card printing — design, paper stock, foil, spot UV, and bulk runs. Print-ready files and fast turnaround from Adrevnview.",
+    intro: "A business card is still the fastest way to leave a physical impression. We design and print cards that match your brand identity — from classic uncoated stock to foil, spot UV, and rounded-corner finishes — so every handshake reinforces the same quality as your website.",
+    benefits: ["Brand-matched card design", "Premium paper and specialty finishes", "Single and double-sided layouts", "QR and NFC-ready card options", "Bulk and reprint-friendly files"],
+    process: ["Brand and quantity briefing", "Layout and proof approval", "Print production and finishing", "Delivery and reprint file handoff"],
+    faq: [
+      { question: "Can you design the card and print it?", answer: "Yes. We handle design, print-ready files, and production — or we print from your existing artwork after a quality check." },
+      { question: "Do you offer NFC review cards?", answer: "Yes. Pair printed business cards with our Google NFC Review Card so customers can tap to leave a review." },
+    ],
+  },
+  {
+    title: "Letterhead Printing",
+    category: "printing",
+    headline: "Letterhead and Stationery Printing",
+    description: "Letterheads, envelopes, and matching stationery that keep every document on-brand.",
+    seoTitle: "Letterhead Printing Services | Adrevnview",
+    seoDescription: "Professional letterhead, envelope, and stationery printing — matching your logo, colors, and brand guidelines from Adrevnview.",
+    intro: "Contracts, invoices, and client letters should look as considered as your website. We design and print letterheads, envelopes, and complementary stationery with accurate color matching so your paperwork feels like part of one brand system.",
+    benefits: ["Letterhead and continuation sheets", "Envelope and compliment-slip matching", "Pantone and CMYK color accuracy", "Digital and offset print options", "Templates for Word and Google Docs"],
+    process: ["Stationery audit and brand alignment", "Layout proofs for paper sizes", "Print and finishing", "Editable templates for your team"],
+    faq: [{ question: "Can you supply Word templates with the printed letterhead?", answer: "Yes. We deliver matching digital templates so staff can type letters that align with the printed stock." }],
+  },
+  {
+    title: "Restaurant Menu Printing",
+    category: "printing",
+    headline: "Restaurant Menu Design and Printing",
+    description: "Menus, takeout inserts, and table tents designed to sell dishes and hold up on the floor.",
+    seoTitle: "Restaurant Menu Printing | Adrevnview",
+    seoDescription: "Restaurant menu design and printing — dine-in menus, takeout menus, table tents, and laminated cards from Adrevnview.",
+    intro: "A menu is a sales tool, not just a list. We design restaurant menus that highlight signatures, pair photos with prices cleanly, and print on stocks that survive spills, lamination, and seasonal updates — from dine-in books to takeout flyers and table tents.",
+    benefits: ["Dine-in, takeout, and digital-ready layouts", "Lamination, coating, and tear-resistant stocks", "Seasonal insert and reprint planning", "Allergen and QR-order friendly layouts", "Matching table tents and window cards"],
+    process: ["Menu audit and item hierarchy", "Design proofs for each format", "Print, laminate, and bind", "File package for future reprints"],
+    faq: [{ question: "Can you update menus when prices change?", answer: "Yes. We keep print-ready files so seasonal or price updates are fast reprints rather than full redesigns." }],
+  },
+  {
+    title: "Brochure and Flyer Printing",
+    category: "printing",
+    headline: "Brochure and Flyer Printing for Campaigns",
+    description: "Brochures, flyers, catalogs, and leave-behinds that turn print into a sales conversation.",
+    seoTitle: "Brochure and Flyer Printing | Adrevnview",
+    seoDescription: "Brochure, flyer, and catalog printing — tri-folds, leave-behinds, and campaign collateral designed and printed by Adrevnview.",
+    intro: "Print still converts at events, storefronts, and sales meetings. We design and print brochures, flyers, catalogs, and posters with the same visual system as your digital brand — so a tri-fold on a counter feels like an extension of your website, not a leftover.",
+    benefits: ["Tri-fold, bi-fold, and booklet formats", "Flyer and poster runs for promotions", "Campaign-matched copy and photography layout", "Spot UV, matte, and gloss finishes", "Bulk quantities with reprint files"],
+    process: ["Offer and format selection", "Copy layout and visual design", "Proof and paper selection", "Print production and delivery"],
+    faq: [{ question: "Do you print posters and catalogs as well?", answer: "Yes. Brochures and flyers are the core offering; posters, catalogs, and leave-behinds use the same design and production workflow." }],
+  },
+  {
+    title: "Panaflex and Banner Advertising",
+    category: "printing",
+    headline: "Panaflex, Flex, and Outdoor Banner Advertising",
+    description: "Shop-front panaflex, flex banners, hoardings, and outdoor advertising printed for weather and visibility.",
+    seoTitle: "Panaflex & Flex Banner Printing | Adrevnview",
+    seoDescription: "Panaflex (penaflex) and flex banner printing for shops, hoardings, and outdoor ads — large-format design and production from Adrevnview.",
+    intro: "Outdoor advertising has to read from the street in a second. We design and produce panaflex (also called penaflex or flex) banners, shop fascias, hoardings, and pole banners with high-contrast layouts, durable vinyl, and sizes matched to your storefront or campaign site.",
+    benefits: ["Shop-front panaflex and fascia boards", "Flex banners, hoardings, and billboards", "Weather-resistant vinyl and finishing", "Large-format artwork at print resolution", "Installation-ready grommets, poles, and frames"],
+    process: ["Site measure and viewing distance", "Large-format design and proof", "Print on flex / panaflex media", "Finishing and delivery for install"],
+    faq: [
+      { question: "What is panaflex or penaflex printing?", answer: "Panaflex (often spelled penaflex) is large-format flex vinyl used for shop signs, street banners, and outdoor ads. We design the artwork and print it at the size your location needs." },
+      { question: "Can you print vehicle wraps and indoor signage too?", answer: "Yes. Ask about vehicle wraps, roll-up stands, and indoor boards — they follow the same large-format workflow as outdoor flex." },
+    ],
+  },
 ];
 
 export const SERVICES: ServicePage[] = SERVICE_DEFINITIONS.map((s) => ({
@@ -306,6 +387,14 @@ export const FOOTER_LINKS: Record<string, { label: string; slug: string }[]> = {
     "Visual Design Systems",
     "Brand Guidelines",
   ].map((label) => ({ label, slug: slugify(label) })),
+  Printing: [
+    "Printing Services",
+    "Business Card Printing",
+    "Letterhead Printing",
+    "Restaurant Menu Printing",
+    "Brochure and Flyer Printing",
+    "Panaflex and Banner Advertising",
+  ].map((label) => ({ label, slug: slugify(label) })),
 };
 
 export const NAV_SERVICE_LINKS = [
@@ -314,6 +403,7 @@ export const NAV_SERVICE_LINKS = [
   "eCommerce Design",
   "Branding & Identity",
   "SEO & Marketing",
+  "Print & Signage",
   "Website Redesign",
 ].map((label) => {
   const map: Record<string, string> = {
@@ -322,6 +412,7 @@ export const NAV_SERVICE_LINKS = [
     "eCommerce Design": "shopify-development",
     "Branding & Identity": "brand-identity",
     "SEO & Marketing": "seo-services",
+    "Print & Signage": "printing-services",
     "Website Redesign": "website-redesign",
   };
   return { label, slug: map[label] ?? slugify(label) };

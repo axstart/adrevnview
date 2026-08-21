@@ -38,7 +38,7 @@ export const HOME_BODY = `
     </section>
     <section>
       <h2>Why Adrevnview</h2>
-      <p>With 12+ years in business and 10+ live client platforms, Adrevnview combines strategy, design, and engineering into one delivery flow. Every build ships with clean information architecture, performance optimization, analytics-ready structure, and schema markup that helps search engines and AI systems understand what you do. We are rated a top digital agency on Clutch and maintain a 5-star client rating.</p>
+      <p>With 12+ years in business and 10+ live client platforms, Adrevnview combines strategy, design, and engineering into one delivery flow. Every build ships with clean information architecture, performance optimization, analytics-ready structure, and schema markup that helps search engines and AI systems understand what you do. We maintain a 5-star client rating.</p>
       <p>Our process covers web strategy, planning and information architecture, messaging, wireframes, design and development, QA and testing, and launch with ongoing SEO and GEO optimization. Contact us at <a href="mailto:hello@adrevnview.com">hello@adrevnview.com</a> or visit <a href="/contact">our contact page</a> to request a free consultation.</p>
     </section>
     <section>

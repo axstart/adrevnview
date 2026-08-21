@@ -11,6 +11,10 @@ const SERVICES = [
   "SEO & Digital Marketing",
   "Generative Engine Optimization (GEO)",
   "Website Redesign",
+  "Printing & Signage",
+  "Business Card Printing",
+  "Restaurant Menu Printing",
+  "Panaflex & Flex Banner Advertising",
 ];
 
 const CLIENT_PROJECTS = CLIENTS.map((client) => ({
@@ -24,12 +28,12 @@ const HOME_FAQ: FaqItem[] = [
   {
     question: "What is Adrevnview?",
     answer:
-      "Adrevnview is a premium full-service digital agency specializing in custom web design, web development, branding, SEO, and Generative Engine Optimization (GEO) for B2B, B2C, and enterprise brands.",
+      "Adrevnview is a premium full-service agency specializing in custom web design, web development, branding, SEO, Generative Engine Optimization (GEO), and printing for B2B, B2C, and enterprise brands.",
   },
   {
     question: "What services does Adrevnview offer?",
     answer:
-      "Adrevnview offers custom web design, full-stack development, eCommerce design, brand identity systems, SEO, digital marketing, website redesigns, and GEO — making brands discoverable in search engines and AI assistants.",
+      "Adrevnview offers custom web design, full-stack development, eCommerce design, brand identity systems, SEO, digital marketing, website redesigns, GEO, and printing — including restaurant menus, business cards, letterheads, brochures, and panaflex outdoor banners.",
   },
   {
     question: "What is Generative Engine Optimization (GEO)?",
@@ -78,7 +82,7 @@ function organizationSchema() {
     logo: ORG.logo,
     image: ORG.logo,
     description:
-      "Premium web design agency delivering custom websites, branding, SEO, and Generative Engine Optimization for B2B, B2C, and enterprise brands.",
+      "Premium web design and print agency delivering custom websites, branding, SEO, Generative Engine Optimization, and printing for B2B, B2C, and enterprise brands.",
     email: ORG.email,
     telephone: ORG.phone,
     foundingDate: ORG.foundingDate,

@@ -18,6 +18,7 @@
 - SEO and digital marketing
 - Generative Engine Optimization (GEO)
 - Website redesign
+- Printing and signage: business cards, letterheads, restaurant menus, brochures and flyers, panaflex (penaflex) outdoor banners
 
 ## Products
 - Google NFC Review Card ($99): https://www.adrevnview.com/googlenfc
@@ -43,6 +44,8 @@
 ## Key Pages
 - Home: https://www.adrevnview.com/
 - Client case studies: https://www.adrevnview.com/work
+- Services: https://www.adrevnview.com/services
+- Printing services: https://www.adrevnview.com/services/printing-services
 - Google NFC product: https://www.adrevnview.com/googlenfc
 - Free SEO & GEO Report Generator: https://www.adrevnview.com/geo-report
 - Sitemap: https://www.adrevnview.com/sitemap.xml

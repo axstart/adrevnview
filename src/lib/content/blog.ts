@@ -32,7 +32,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "conversion-focused-web-design",
     title: "5 Conversion Patterns We Use on Every Homepage",
     excerpt:
-      "Premium design should drive pipeline, not just win awards. These layout patterns consistently lift consultation requests for B2B sites.",
+      "Premium design should drive pipeline, not vanity metrics. These layout patterns consistently lift consultation requests for B2B sites.",
     category: "Web Design",
     date: "2026-05-28",
     readTime: "5 min read",
