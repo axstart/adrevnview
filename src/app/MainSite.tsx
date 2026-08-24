@@ -1,6 +1,24 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router";
-import { ArrowRight, Star, MapPin, Phone, Mail, Play, ChevronDown, Dumbbell, Sparkles, Search, Globe } from "lucide-react";
+import {
+  ArrowRight,
+  Star,
+  MapPin,
+  Phone,
+  Mail,
+  Play,
+  ChevronDown,
+  Dumbbell,
+  Sparkles,
+  Search,
+  Globe,
+  Scissors,
+  Stethoscope,
+  Calculator,
+  Gavel,
+  ExternalLink,
+  type LucideIcon,
+} from "lucide-react";
 import { GoogleNfcSection } from "@/app/components/nfc/GoogleNfcSection";
 import { SiteFooter } from "@/app/components/SiteFooter";
 import { SiteHeader } from "@/app/components/SiteHeader";
@@ -149,7 +167,63 @@ const LOCATIONS = [
     tag: "HQ",
     address: `${ORG.address.streetAddress}, ${ORG.address.addressLocality}, ${ORG.address.addressRegion} ${ORG.address.postalCode}`,
     phone: ORG.phoneDisplay,
-    img: "https://images.unsplash.com/photo-149644222-3268-e23eb24e107a?w=700&h=420&fit=crop&auto=format",
+    // Hosted locally — remote Unsplash photo-149644222-3268-e23eb24e107a returns 404
+    img: "/images/long-island.jpg",
+  },
+];
+
+const SAAS_SPOTLIGHT: {
+  name: string;
+  domain: string;
+  href: string;
+  label: string;
+  description: string;
+  icon: LucideIcon;
+}[] = [
+  {
+    name: "Matzop",
+    domain: "matzop.com",
+    href: "https://matzop.com",
+    label: "Gym & academy OS",
+    description:
+      "Memberships, schedules, attendance, and front-desk ops for martial arts gyms and academies — plus a member portal for training logs and progress.",
+    icon: Dumbbell,
+  },
+  {
+    name: "Cutzop",
+    domain: "cutzop.com",
+    href: "https://cutzop.com",
+    label: "Barbershop software",
+    description:
+      "Operating software for salon and shop owners — self-serve kiosk check-in, barber selection, and chair-queue management.",
+    icon: Scissors,
+  },
+  {
+    name: "Doczop",
+    domain: "doczop.com",
+    href: "https://doczop.com",
+    label: "Clinic OS",
+    description:
+      "Clinic operating system for multi-doctor practices — boards, treatments, and day-to-day operations in one place.",
+    icon: Stethoscope,
+  },
+  {
+    name: "Taxzop",
+    domain: "taxzop.com",
+    href: "https://taxzop.com",
+    label: "Tax & payroll",
+    description:
+      "US sales tax accounting and payroll for SMEs — USD-native books, state-aware tax coding, and W-2/FICA payroll stubs.",
+    icon: Calculator,
+  },
+  {
+    name: "Bidzop",
+    domain: "bidzop.com",
+    href: "https://bidzop.com",
+    label: "Live auctions",
+    description:
+      "Live currency and philately auction rooms — banknotes, coins, and stamps with consignments and guest demo wallets.",
+    icon: Gavel,
   },
 ];
 
@@ -353,6 +427,61 @@ function ServicesSection() {
               </span>
             </SpringCardLink>
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SaasSpotlightSection() {
+  return (
+    <section className="py-28 px-6">
+      <div className="max-w-7xl mx-auto">
+        <div className="mb-16 max-w-2xl">
+          <p className="text-sky-400 text-sm font-semibold tracking-widest uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
+            Partner Products
+          </p>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-foreground leading-tight" style={{ fontFamily: "Manrope, sans-serif" }}>
+            SaaS we build<br />
+            <GradientText>&amp; spotlight</GradientText>
+          </h2>
+          <p className="text-muted-foreground text-base mt-4 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
+            Vertical operating platforms from the Adrevnview product family — purpose-built for gyms, shops, clinics, tax teams, and live auctions.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {SAAS_SPOTLIGHT.map((product) => {
+            const Icon = product.icon;
+            return (
+              <SpringCard
+                key={product.domain}
+                className="group p-7 rounded-2xl bg-card border border-border hover:border-sky-500/40 transition-all duration-300 flex flex-col"
+              >
+                <div className="w-11 h-11 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center mb-5 group-hover:border-sky-500/40 transition-colors">
+                  <Icon className="w-5 h-5 text-sky-400" />
+                </div>
+                <p className="text-sky-400/90 text-xs font-semibold tracking-widest uppercase mb-2" style={{ fontFamily: "Inter, sans-serif" }}>
+                  {product.label}
+                </p>
+                <h3 className="text-xl font-bold text-foreground mb-2" style={{ fontFamily: "Manrope, sans-serif" }}>
+                  {product.name}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-1" style={{ fontFamily: "Inter, sans-serif" }}>
+                  {product.description}
+                </p>
+                <SpringAnchor
+                  href={product.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sky-400 text-sm font-semibold group-hover:gap-3 transition-all"
+                  style={{ fontFamily: "Manrope, sans-serif" }}
+                >
+                  Visit {product.domain} <ExternalLink className="w-3.5 h-3.5" />
+                </SpringAnchor>
+              </SpringCard>
+            );
+          })}
         </div>
       </div>
     </section>
@@ -592,7 +721,15 @@ function LocationsSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="rounded-2xl overflow-hidden h-72 bg-sky-900/20">
-            <img src={loc.img} alt={loc.city} className="w-full h-full object-cover" />
+            <img
+              src={loc.img}
+              alt={`${loc.city}, New York — Adrevnview headquarters`}
+              className="w-full h-full object-cover"
+              width={700}
+              height={420}
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div className="space-y-6">
             <h3 className="text-3xl font-bold text-foreground" style={{ fontFamily: "Manrope, sans-serif" }}>{loc.city} Office</h3>
@@ -767,6 +904,7 @@ export default function App() {
         <StatsBar />
         <GeoReportPromo />
         <ServicesSection />
+        <SaasSpotlightSection />
         <GoogleNfcSection />
         <PortfolioSection />
         <ProcessSection />
