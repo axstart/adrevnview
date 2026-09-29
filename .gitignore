@@ -10,3 +10,5 @@ Thumbs.db
 .env.local
 .env.deskforge.local
 
+.vercel
+.env*
