@@ -1,5 +1,6 @@
 import { Suspense, useEffect } from "react";
 import { RouterProvider } from "react-router";
+import { DeskForgeWidget } from "@/components/DeskForgeWidget";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { PerformanceProvider } from "@/lib/performance";
 import { AuthProvider } from "@/lib/admin/auth";
@@ -22,6 +23,7 @@ export default function App() {
           <Suspense fallback={<div className="min-h-screen bg-background" />}>
             <RouterProvider router={router} />
           </Suspense>
+          <DeskForgeWidget />
         </AuthProvider>
       </PerformanceProvider>
     </ThemeProvider>

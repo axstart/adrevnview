@@ -2,8 +2,11 @@ import { Link } from "react-router";
 import { Logo } from "@/components/Logo";
 import { FOOTER_LINKS, getServicePath } from "@/lib/content/services";
 import { FOOTER_INDUSTRY_LINKS } from "@/lib/content/navigation";
+import { deskforgePortalUrl } from "@/lib/deskforge";
 
 export function SiteFooter() {
+  const supportHref = deskforgePortalUrl();
+
   return (
     <footer className="bg-muted border-t border-sky-900/20 pt-20 pb-10 px-6">
       <div className="max-w-7xl mx-auto">
@@ -84,6 +87,15 @@ export function SiteFooter() {
             <Link to="/contact" className="text-muted-foreground text-sm hover:text-muted-foreground transition-colors" style={{ fontFamily: "Inter, sans-serif" }}>
               Contact
             </Link>
+            {supportHref ? (
+              <a
+                href={supportHref}
+                className="text-muted-foreground text-sm hover:text-muted-foreground transition-colors"
+                style={{ fontFamily: "Inter, sans-serif" }}
+              >
+                Support
+              </a>
+            ) : null}
             <Link to="/geo-report" className="text-muted-foreground text-sm hover:text-muted-foreground transition-colors" style={{ fontFamily: "Inter, sans-serif" }}>
               GEO Report
             </Link>

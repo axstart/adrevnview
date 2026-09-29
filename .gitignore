@@ -6,3 +6,7 @@ reports/
 .DS_Store
 Thumbs.db
 *.code-workspace
+
+.env.local
+.env.deskforge.local
+

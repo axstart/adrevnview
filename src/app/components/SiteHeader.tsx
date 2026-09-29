@@ -5,12 +5,14 @@ import { Logo } from "@/components/Logo";
 import { SpringButton, SpringNavLink } from "@/components/SpringButton";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { NAV_LINKS } from "@/lib/content/navigation";
+import { deskforgePortalUrl } from "@/lib/deskforge";
 import { ORG } from "@/lib/seo/siteConfig";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const supportHref = deskforgePortalUrl();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -99,6 +101,15 @@ export function SiteHeader() {
           >
             {ORG.phoneDisplay}
           </a>
+          {supportHref ? (
+            <a
+              href={supportHref}
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              style={{ fontFamily: "Inter, sans-serif" }}
+            >
+              Support
+            </a>
+          ) : null}
           <ThemeToggle />
           <SpringNavLink to="/contact" size="sm" className="rounded-full px-5 py-2.5 text-sm font-semibold" style={{ fontFamily: "Manrope, sans-serif" }}>
             Request a Quote
@@ -157,6 +168,16 @@ export function SiteHeader() {
               </Link>
             ) : null,
           )}
+          {supportHref ? (
+            <a
+              href={supportHref}
+              onClick={() => setOpen(false)}
+              className="block text-muted-foreground hover:text-foreground text-base py-2"
+              style={{ fontFamily: "Inter, sans-serif" }}
+            >
+              Support
+            </a>
+          ) : null}
           <SpringNavLink to="/contact" onClick={() => setOpen(false)} className="w-full mt-4 rounded-full font-semibold" style={{ fontFamily: "Manrope, sans-serif" }}>
             Request a Quote
           </SpringNavLink>
